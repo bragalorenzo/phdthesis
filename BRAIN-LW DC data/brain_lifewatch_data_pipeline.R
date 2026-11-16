@@ -17,7 +17,14 @@ brainsites <- rio::import(paste0("./brainsites_", Sys.Date(), ".xlsx"))
 datasetlist <- rio::import(paste0("./Tank/datasetlist_", Sys.Date(), ".xlsx"))
 brainbackbone <- rio::import("brain_taxonomic_backbone.xlsx")
 # Write backbone backup
-rio::export(brainbackbone, "brain_taxonomic_backbone_backup.xlsx")
+rio::export(
+  brainbackbone,
+  paste0(
+    "brain_taxonomic_backbone_backup",
+    Sys.Date(),
+    ".xlsx"
+  )
+)
 
 ## Custom functions
 
