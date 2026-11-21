@@ -3,16 +3,6 @@
 ######################################################################
 
 # Global and pollen-zone models + exploratory biplot
-#
-# Reproducibility rules:
-#   - Original spreadsheets/CSVs are never overwritten.
-#   - Samples are joined by ID, not assumed to share an implicit row order.
-#   - Pollen-zone assignments come only from the depth intervals in "zonation".
-#   - Response exclusions, climate predictors, and plotting choices are explicit.
-#   - No permutation tests are run: temporal dependence has not been assessed.
-#   - For the thesis: check temporal structure, response residuals and predictor
-#     distributions before drawing inferential conclusions.
-###############################################################################
 
 library(tidyverse)
 library(vegan)
@@ -35,7 +25,7 @@ setwd(workdir)
 
 # Palette and pollen-zone order
 if (tolower(record) == "inf1") {
-    retro_palette <- c(
+    palette <- c(
         "MOD4b" = "#ce4a4a",
         "MOD4a" = "#eaaf41",
         "MOD3"  = "#3cb68e",
@@ -49,7 +39,7 @@ if (tolower(record) == "inf1") {
         "MOD2", "MOD1b", "MOD1a"
     )
 } else if (tolower(record) == "cpz2") {
-    retro_palette <- c(
+    palette <- c(
         "MAL4"  = "#ce4a4a",
         "MAL3"  = "#eaaf41",
         "MAL2"  = "#6688c3",
@@ -125,8 +115,7 @@ settings <- list(
         conifer = "Conifers",
         oakwood = "Mixed oakwood",
         potentially_anthropic = "Potential anthropogenic indicators"
-    ),
-    retro_colors = retro_palette
+    )
 )
 
 # Data #####
@@ -214,7 +203,7 @@ model_metrics <- function(model, n_samples, n_predictors) {
     )
 }
 
-# Plot scores from the exact model supplied: no refitting in the plot function.
+# Plot scores from the supplied model
 plot_rda <- function(model, sample_zones, zone_order, settings) {
     assert(
         length(model$CCA$eig) >= 2L,
@@ -352,7 +341,7 @@ plot_rda <- function(model, sample_zones, zone_order, settings) {
             segment.colour = "grey60",
             segment.size = 0.25
         ) +
-        scale_fill_manual(values = retro_palette, drop = FALSE) +
+        scale_fill_manual(values = palette, drop = FALSE) +
         coord_equal() +
         labs(
             title = settings$plot_title, subtitle = subtitle,
