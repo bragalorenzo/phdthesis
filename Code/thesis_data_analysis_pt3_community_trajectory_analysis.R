@@ -1,6 +1,6 @@
-################################################################################
-#--- PhD Thesis Data Analysis ---#--- Part 3: Community Trajectory Analysis ---#
-################################################################################
+#######################################################################
+#--- L.B. PhD Thesis ---#--- Part 3: Community Trajectory Analysis ---#
+#######################################################################
 
 # Savestates #####
 save.image("inf1_cta_workspace.RData")
@@ -8,32 +8,58 @@ load("cpz2_cta_workspace.RData")
 
 # Libraries #####
 
-# remotes::install_github("emf-creaf/ecotraj")
-
 library(tidyverse)
 library(vegan)
 library(ecotraj)
+library(patchwork)
 
-# Setup #####
+## If ecotraj is not installed
 
-record <- "cpz2"
+remotes::install_github("emf-creaf/ecotraj")
 
-workdir <- paste0(
-    "G:/My Drive/Work/PhD Thesis/Data Analysis/",
-    toupper(record),
-    " Data"
+# Setup and Data #####
+
+set.seed(777)
+
+record <- "inf1" # Manually change to swap records
+
+load(
+    paste0(
+        "./Github/phdthesis/data/", # Path
+        record, "_harmonised_data.Rdata" # File name
+    )
 )
 
-input_file <- paste0(
-    record, "_compendium.xlsx"
-)
+# Helper functions #####
 
-setwd(workdir)
+## Extract taxon variance
+
+taxon.variance <- function(group_ids) {
+    group_ids <- as.character(group_ids)
+
+    purrr::map(unique(group_ids), function(group_name) {
+        x <- as.matrix(counts_hellinger[
+            group_ids == group_name, ,
+            drop = FALSE
+        ])
+
+        v <- apply(x, 2, stats::var)
+        total <- sum(v)
+
+        data.frame(
+            group = group_name,
+            pollenTaxon = names(v),
+            taxonVariance = as.numeric(v),
+            relativeContribution = if (total > 0) v / total else 0
+        )
+    }) |>
+        purrr::list_rbind()
+}
 
 ## Palette
 if (tolower(record) == "inf1") {
     # INF1 palette
-    retro_palette <- c(
+    palette <- c(
         "MOD4b" = "#ce4a4a",
         "MOD4a" = "#eaaf41",
         "MOD3"  = "#3cb68e",
@@ -45,7 +71,7 @@ if (tolower(record) == "inf1") {
     zone_levels <- c("MOD4b", "MOD4a", "MOD3", "MOD2", "MOD1b", "MOD1a")
 } else if (tolower(record) == "cpz2") {
     # CPZ2 palette
-    retro_palette <- c(
+    palette <- c(
         "MAL4" = "#ce4a4a",
         "MAL3" = "#eaaf41",
         "MAL2" = "#6688c3",
@@ -78,7 +104,6 @@ taxon_lookup <- rio::import(input_file, sheet = "taxon_lookup")
 
 # Sort metadata from oldest to youngest
 metadata_traj <- metadata |>
-    filter(excludeSample == "no") |>
     arrange(desc(ageCalBP))
 
 # Put sample IDs in row names ONLY for the numeric community matrix
@@ -92,7 +117,7 @@ counts_traj <- counts_traj[
     drop = FALSE
 ]
 
-## Check for enough community states
+## Check for enough community states (3)
 
 n <- nrow(metadata_traj)
 stopifnot(n >= 3) # Enough observations for CTA
@@ -104,13 +129,6 @@ zones <- zones |>
     mutate(pollenZone = as.character(pollenZone))
 
 zone_breaks <- c(zones$topDepth[1], zones$bottomDepth)
-stopifnot(
-    all(diff(zone_breaks) > 0),
-    all(metadata_traj$depthCm >= min(zone_breaks)),
-    all(metadata_traj$depthCm <= max(zone_breaks)),
-    !any(metadata_traj$depthCm %in%
-        zone_breaks[-c(1, length(zone_breaks))])
-)
 
 metadata_traj <- metadata_traj |>
     mutate(
@@ -122,23 +140,8 @@ metadata_traj <- metadata_traj |>
         )),
     )
 
-stopifnot(!anyNA(metadata_traj$pollenZone))
-
 # Character levels for chronological plotting, oldest -> youngest.
 zone_levels <- rev(zones$pollenZone)
-
-zone_summary <- metadata_traj |>
-    group_by(pollenZone) |>
-    summarise(
-        n = n(),
-        ageOld = max(ageCalBP),
-        ageYoung = min(ageCalBP),
-        duration = ageOld - ageYoung,
-        depthTop = min(depthCm),
-        depthBottom = max(depthCm),
-        maxAgeGap = if (n() >= 2) max(-diff(ageCalBP)) else NA_real_,
-        .groups = "drop"
-    )
 
 # Global trajectory #####
 
@@ -163,20 +166,17 @@ trajectory <- ecotraj::defineTrajectories(
 
 stopifnot(inherits(trajectory, "trajectories"))
 
-## Global trajectory metrics
+## Global trajectory metrics #####
+
+### General metrics
 
 trajectory_metrics <- ecotraj::trajectoryMetrics(trajectory)
+
+### Explore segment lengths and speeds
+
 trajectory_lengths <- ecotraj::trajectoryLengths(trajectory)
+
 trajectory_speeds <- ecotraj::trajectorySpeeds(trajectory)
-trajectory_angles <- ecotraj::trajectoryAngles(trajectory, stats = FALSE)
-trajectory_variation <- ecotraj::trajectoryInternalVariation(
-    trajectory,
-    relativeContributions = TRUE
-)
-
-## Segment and relative speed data frame
-
-segment_cols <- paste0("S", seq_len(n - 1))
 
 segment_df <- data.frame(
     sampleFrom = metadata_traj$sample[-n], # Remove youngest sample
@@ -186,11 +186,11 @@ segment_df <- data.frame(
     zoneFrom = metadata_traj$pollenZone[-n],
     zoneTo = metadata_traj$pollenZone[-1],
     length = as.numeric(unlist(
-        trajectory_lengths[1, segment_cols, drop = FALSE],
+        trajectory_lengths[1, paste0("S", seq_len(n - 1)), drop = FALSE],
         use.names = FALSE
     )),
     speed = as.numeric(unlist(
-        trajectory_speeds[1, segment_cols, drop = FALSE],
+        trajectory_speeds[1, paste0("S", seq_len(n - 1)), drop = FALSE],
         use.names = FALSE
     ))
 ) |>
@@ -201,7 +201,9 @@ segment_df <- data.frame(
         cumulativeLength = cumsum(length)
     )
 
-## Angles
+### Explore angles
+
+trajectory_angles <- ecotraj::trajectoryAngles(trajectory)
 
 angle_df <- data.frame(
     sample = metadata_traj$sample[2:(n - 1)],
@@ -212,16 +214,19 @@ angle_df <- data.frame(
     ))
 )
 
-## Per-state relative contribution to global internal variation (LCBD-like)
+### State-wise (sample-wise) relative contribution to variance
 
-rc_cols <- paste0("rc_", seq_len(n))
+trajectory_variation <- ecotraj::trajectoryInternalVariation(
+    trajectory,
+    relativeContributions = TRUE
+)
 
 internal_df <- data.frame(
     sample = metadata_traj$sample,
     ageCalBP = metadata_traj$ageCalBP,
     pollenZone = metadata_traj$pollenZone,
     contribution = as.numeric(unlist(
-        trajectory_variation[1, rc_cols, drop = FALSE],
+        trajectory_variation[1, paste0("rc_", seq_len(n)), drop = FALSE],
         use.names = FALSE
     ))
 ) |>
@@ -232,6 +237,20 @@ internal_df <- data.frame(
 # Pollen zone subtrajectories #####
 
 # Each subtrajectory requires at least three samples for all metrics
+
+zone_summary <- metadata_traj |>
+    group_by(pollenZone) |>
+    summarise(
+        n = n(),
+        ageOld = max(ageCalBP),
+        ageYoung = min(ageCalBP),
+        duration = ageOld - ageYoung,
+        depthTop = min(depthCm),
+        depthBottom = max(depthCm),
+        maxAgeGap = if (n() >= 2) max(-diff(ageCalBP)) else NA_real_,
+        .groups = "drop"
+    )
+
 stopifnot(all(zone_summary$n >= 3))
 
 ## Compute subtrajectories
@@ -260,28 +279,7 @@ subtraj_summary <- zone_summary |>
 # Taxon-wise decomposition of internal variance #####
 
 # Multivariate sample variance is the sum of individual taxon variances
-
-taxon.variance <- function(group_ids) {
-    group_ids <- as.character(group_ids)
-
-    purrr::map(unique(group_ids), function(group_name) {
-        x <- as.matrix(counts_hellinger[
-            group_ids == group_name, ,
-            drop = FALSE
-        ])
-
-        v <- apply(x, 2, stats::var)
-        total <- sum(v)
-
-        data.frame(
-            group = group_name,
-            pollenTaxon = names(v),
-            taxonVariance = as.numeric(v),
-            relativeContribution = if (total > 0) v / total else 0
-        )
-    }) |>
-        purrr::list_rbind()
-}
+# Species Contribution to Beta Diversity (SCBD)
 
 ## Decompose taxon variance for the global record
 
@@ -294,23 +292,6 @@ taxon_variance_global <- data.frame(
         contributionPct = relativeContribution * 100
     ) |>
     arrange(desc(relativeContribution))
-
-# Check consistency with global trajectory internal variance
-
-stopifnot(
-    abs(
-        sum(taxon_variance_global$taxonVariance) -
-            trajectory_variation$internal_variance[1]
-    ) < 1e-8
-)
-
-## Decompose taxon variance for each pollen zone
-
-taxon_variance_zones <- taxon.variance(
-    metadata_traj$pollenZone
-) |>
-    rename(pollenZone = group)
-
 
 ## Select the 10 taxa contributing most to global variance
 
@@ -325,55 +306,17 @@ top_taxa_global <- taxon_variance_global |>
         pollenTaxon = factor(pollenTaxon, levels = pollenTaxon)
     )
 
-# Independent check: sum of individual taxon variances must reproduce the
-# internal variance returned by ecotraj for every zone and main zone.
-check_zone <- taxon_variance_zones |>
-    group_by(pollenZone) |>
-    summarise(varSum = sum(taxonVariance), .groups = "drop") |>
-    left_join(
-        subtraj_summary |> select(pollenZone, internal_variance),
-        by = "pollenZone"
-    )
+## Decompose taxon variance for each pollen zone
 
-check_main <- taxon_variance_global |>
-    summarise(varSum = sum(taxonVariance), .groups = "drop")
+taxon_variance_zones <- taxon.variance(
+    metadata_traj$pollenZone
+) |>
+    rename(pollenZone = group)
 
-stopifnot(
-    all(abs(check_zone$varSum - check_zone$internal_variance) < 1e-8),
-    all(abs(check_main$varSum - check_main$internal_variance) < 1e-8)
-)
-
-# Export CTA results #####
-
-rio::export(
-    list(
-        "global_segments" = segment_df,
-        "global_angles" = angle_df,
-        "global_contributions" = internal_df,
-        "subtraj_metrics" = subtraj_summary,
-        "sub_taxon_variance" = taxon_variance_zones,
-        "global_taxon_variance" = taxon_variance_global
-    ),
-    file = paste0(
-        "./Outputs/",
-        record,
-        "_cta_",
-        Sys.Date(),
-        ".xlsx"
-    )
-)
-
-# Visualisation #####
-# 3 figures total
-# Figure 1/3 = PCoA trajectory
-# Figure 2A/3 = LCBD-like through time
-# Figure 2B/3 = Top 10 taxa contributing to global variance
-# Figure 3A/3 = Internal variance by pollen zone
-# Figure 3B/3 = Top 10 taxa contributing to within-zone variance
-
-## PCoA
+## Run PCoA to plot whole trajectory in reduced space
 
 pcoa <- stats::cmdscale(dist_hellinger, k = 2, eig = TRUE)
+
 pcoa_df <- as.data.frame(pcoa$points, .name_repair = "minimal") |>
     stats::setNames(c("PCoA1", "PCoA2")) |>
     mutate(
@@ -387,7 +330,9 @@ axis_percent <- round(
     1
 )
 
-## Order factors before plotting
+# Visualisation #####
+
+## Order pollen zone factors before plotting
 
 pcoa_df <- pcoa_df |>
     mutate(pollenZone = factor(as.character(pollenZone), levels = zone_levels))
@@ -398,37 +343,7 @@ internal_df <- internal_df |>
 subtraj_summary <- subtraj_summary |>
     mutate(pollenZone = factor(as.character(pollenZone), levels = zone_levels))
 
-# Global taxon variance ------------------------------------------------------
-
-taxon_variance_global <- data.frame(
-    pollenTaxon = colnames(counts_hellinger),
-    taxonVariance = apply(counts_hellinger, 2, stats::var)
-) |>
-    mutate(
-        relativeContribution = taxonVariance / sum(taxonVariance),
-        contributionPct = relativeContribution * 100
-    ) |>
-    arrange(desc(relativeContribution))
-
-stopifnot(
-    abs(
-        sum(taxon_variance_global$taxonVariance) -
-            trajectory_variation$internal_variance[1]
-    ) < 1e-8
-)
-
-top_taxa_global <- taxon_variance_global |>
-    slice_max(
-        order_by = relativeContribution,
-        n = 10,
-        with_ties = FALSE
-    ) |>
-    arrange(relativeContribution) |>
-    mutate(
-        pollenTaxon = factor(pollenTaxon, levels = pollenTaxon)
-    )
-
-# Figure 1/3 : PCoA
+## Figure 1: trajectory PCoA
 
 p_pcoa <- ggplot(pcoa_df, aes(PCoA1, PCoA2)) +
     geom_path(colour = "grey65", linewidth = 0.5) +
@@ -448,7 +363,7 @@ p_pcoa <- ggplot(pcoa_df, aes(PCoA1, PCoA2)) +
         breaks = c("Start", "End")
     ) +
     scale_colour_manual(
-        values = retro_palette,
+        values = palette,
         breaks = zone_levels,
         drop = FALSE
     ) +
@@ -462,32 +377,9 @@ p_pcoa <- ggplot(pcoa_df, aes(PCoA1, PCoA2)) +
     theme_classic() +
     theme(legend.position = "right")
 
-svg(
-    filename = paste0(
-        "./Figures/",
-        record,
-        "_cta_pcoa_",
-        Sys.Date(),
-        ".svg"
-    ),
-    width = 16, height = 9
-)
 p_pcoa
-dev.off()
 
-ggsave(
-    filename = paste0(
-        "./Figures/",
-        record,
-        "_cta_pcoa_",
-        Sys.Date(),
-        ".png"
-    ),
-    plot = p_pcoa,
-    width = 16, height = 9
-)
-
-# Figure 2A/3 : sample contribution to trajectory variance
+## Figure 2A: community state (sample) contribution to trajectory variance
 
 p_lcbd <- ggplot(internal_df, aes(x = contribution, y = ageCalBP)) +
     geom_rect(
@@ -514,8 +406,8 @@ p_lcbd <- ggplot(internal_df, aes(x = contribution, y = ageCalBP)) +
     ) +
     scale_fill_manual(
         name = "Pollen zone",
-        values = retro_palette,
-        breaks = names(retro_palette)
+        values = palette,
+        breaks = names(palette)
     ) +
     scale_y_reverse() +
     expand_limits(y = internal_df$ageCalBP) +
@@ -528,7 +420,7 @@ p_lcbd <- ggplot(internal_df, aes(x = contribution, y = ageCalBP)) +
 
 p_lcbd
 
-# Figure 2B/3 : Pollen zone variance
+## Figure 2B: internal variance of each pollen zone
 
 p_zone_variance <- ggplot(
     subtraj_summary,
@@ -541,7 +433,7 @@ p_zone_variance <- ggplot(
         size = 3.1
     ) +
     scale_fill_manual(
-        values = retro_palette,
+        values = palette,
         breaks = zone_levels,
         drop = FALSE
     ) +
@@ -554,9 +446,7 @@ p_zone_variance <- ggplot(
 
 p_zone_variance
 
-# Figure 2/3: panel assembly
-
-library(patchwork)
+## Figure 2: complete
 
 p_lcbd_zone_var <- p_lcbd + p_zone_variance +
     plot_layout(
@@ -565,54 +455,34 @@ p_lcbd_zone_var <- p_lcbd + p_zone_variance +
 
 p_lcbd_zone_var
 
-svg(
-    filename = paste0(
-        "./Figures/",
-        record,
-        "_cta_lcbd_zone_variance_",
-        Sys.Date(),
-        ".svg"
-    ),
-    width = 16, height = 9
-)
-p_lcbd_zone_var
-dev.off()
+## Figure 3A: top 10 taxa contributing to global variance
 
-ggsave(
-    filename = paste0(
-        "./Figures/",
-        record,
-        "_cta_lcbd_zone_variance_",
-        Sys.Date(),
-        ".png"
-    ),
-    plot = p_lcbd_zone_var,
-    width = 16, height = 9
-)
+### Clean taxon labels for plotting
 
-# Figure 3A/3 : top 10 taxa contributing to global variance
+if (record == tolower("inf1")) {
+    # INF1
+    taxon_labels <- c(
+        "Ornithogalum umbellatum-Typ B" = "Ornithogalum umbellatum type",
+        "Scirpus sl" = "Scirpus s.l.",
+        "Sparganium emersum type P" = "Sparganium emersum type",
+        "Sparganium erectum type P" = "Sparganium erectum type"
+    )
+} else if (record == tolower("cpz2")) {
+    # CPZ2
+    taxon_labels <- c(
+        "Poaceae wild grass" = "Poaceae wild\ngrass group",
+        "Aster type M" = "Aster type",
+        "Scilla type M" = "Scilla type",
+        "Avena-Triticum group A" = "Avena-Triticum group",
+        "Ranunculus aquatilis group P" = "Ranunculus aquatilis group",
+        "Cirsium palustre type P" = "Cirsium palustre type",
+        "Urtica dioica type P" = "Urtica dioica type",
+        "Pulsatilla vulgaris group P" = "Pulsatilla vulgaris group",
+        "Ephedra dystachya-Typ B" = "Ephedra distachya type"
+    )
+}
 
-# Taxon labels for plotting
-## INF1
-taxon_labels <- c(
-    "Ornithogalum umbellatum-Typ B" = "Ornithogalum umbellatum type",
-    "Scirpus sl" = "Scirpus s.l.",
-    "Sparganium emersum type P" = "Sparganium emersum type",
-    "Sparganium erectum type P" = "Sparganium erectum type"
-)
-
-## CPZ2
-taxon_labels <- c(
-    "Poaceae wild grass" = "Poaceae wild\ngrass group",
-    "Aster type M" = "Aster type",
-    "Scilla type M" = "Scilla type",
-    "Avena-Triticum group A" = "Avena-Triticum group",
-    "Ranunculus aquatilis group P" = "Ranunculus aquatilis group",
-    "Cirsium palustre type P" = "Cirsium palustre type",
-    "Urtica dioica type P" = "Urtica dioica type",
-    "Pulsatilla vulgaris group P" = "Pulsatilla vulgaris group",
-    "Ephedra dystachya-Typ B" = "Ephedra distachya type"
-)
+### Plot
 
 p_taxon_variance_global <- ggplot(
     top_taxa_global,
@@ -641,9 +511,7 @@ p_taxon_variance_global <- ggplot(
         vjust = 0.5,
     ))
 
-p_taxon_variance_global
-
-# Figure 3B/3 : top 10 taxa per zone
+## Figure 3B: top 10 taxa per zone
 
 top_taxa <- taxon_variance_zones |>
     group_by(pollenZone) |>
@@ -672,7 +540,7 @@ p_taxon_variance <- ggplot(
         width = 0.75
     ) +
     scale_fill_manual(
-        values = retro_palette,
+        values = palette,
         breaks = zone_levels,
         guide = "none"
     ) +
@@ -711,55 +579,9 @@ p_taxon_variance <- ggplot(
 
 p_taxon_variance
 
+## Figure 3: complete
+
 taxa_variance <- p_taxon_variance_global + p_taxon_variance +
     plot_layout(widths = c(0.4, 0.6))
 
 taxa_variance
-
-# Save
-
-svg(
-    filename = paste0(
-        "./Figures/",
-        record,
-        "_cta_taxa_variance",
-        Sys.Date(),
-        ".svg"
-    ),
-    width = 16, height = 9
-)
-taxa_variance
-dev.off()
-
-ggsave(
-    filename = paste0(
-        "./Figures/",
-        record,
-        "_cta_taxa_variance",
-        Sys.Date(),
-        ".png"
-    ),
-    plot = taxa_variance,
-    width = 16, height = 9
-)
-
-# Plotting other metrics #####
-
-p_length <- plot_age_metric(
-    segment_df, "length", "Segment length", "Hellinger distance", "#507c78"
-) +
-    geom_point(
-        data = filter(segment_df, crossesZone),
-        colour = "firebrick", shape = 4, size = 2.1
-    ) +
-    theme_classic()
-
-p_speed <- plot_age_metric(
-    segment_df, "speed100", "Segment speed",
-    "Hellinger distance / 100 yr", "#b36f50"
-)
-
-p_angle <- plot_age_metric(
-    angle_df, "angle", "Turning angle", "Degrees", "#8b7194"
-) +
-    scale_x_continuous(limits = c(0, 180), breaks = seq(0, 180, 45))
