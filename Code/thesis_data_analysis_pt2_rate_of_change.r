@@ -1,48 +1,32 @@
-##########################################################################
-#--- PhD Thesis Data Analysis ---#--- Part 2: Rate of Change Analysis ---#
-##########################################################################
-
-# Savestates #####
-save.image("inf1_roc_workspace.RData")
-load("cpz2_cta_workspace.RData")
+##################################################################
+#--- L.B. PhD Thesis  ---#--- Part 2: Rate of Change Analysis ---#
+##################################################################
 
 # Libraries #####
 
-# remotes::install_github("HOPE-UIB-BIO/R-Ratepol-package")
-
 library(tidyverse)
-library(vegan)
 library(RRatepol)
+library(patchwork)
 
-# Setup #####
+## If RRatepol is not installed
 
-record <- "cpz2"
+remotes::install_github("HOPE-UIB-BIO/R-Ratepol-package")
 
-workdir <- paste0(
-    "G:/My Drive/Work/PhD Thesis/Data Analysis/",
-    toupper(record),
-    " Data"
-)
+# Setup and Data #####
 
-input_file <- paste0(
-    record, "_compendium.xlsx"
-)
+set.seed(777)
 
-setwd(workdir)
+record <- "inf1" # Manually change to swap records
 
-## Palette
-if (tolower(record) == "inf1") {
-    # INF1 palette
-    retro_palette <- c(
-        "MOD4b" = "#ce4a4a",
-        "MOD4a" = "#eaaf41",
-        "MOD3"  = "#3cb68e",
-        "MOD2"  = "#6688c3",
-        "MOD1b" = "#b25da6",
-        "MOD1a" = "#48a56a"
+load(
+    paste0(
+        "./phdthesis/data/", # Path
+        record, "_harmonised_data.Rdata" # File name
     )
-    # Chronological order of pollen zones: recent -> old
-    zone_levels <- c("MOD4b", "MOD4a", "MOD3", "MOD2", "MOD1b", "MOD1a")
+)
+
+## RoC bin sizes
+if (tolower(record) == "inf1") {
     # Breaks for y axis of RoC plots
     y_breaks <- seq(500, 4000, 500)
     # Bin sizes for base run and sensitivity analyses
@@ -50,22 +34,6 @@ if (tolower(record) == "inf1") {
     bin_s1 <- 150
     bin_s2 <- 200
 } else if (tolower(record) == "cpz2") {
-    # CPZ2 palette
-    retro_palette <- c(
-        "MAL4" = "#ce4a4a",
-        "MAL3" = "#eaaf41",
-        "MAL2" = "#6688c3",
-        "MAL1b" = "#b25da6",
-        "MAL1a" = "#48a56a"
-    )
-    # Chronological order of pollen zones: recent -> old
-    zone_levels <- c(
-        "MAL4",
-        "MAL3",
-        "MAL2",
-        "MAL1b",
-        "MAL1a"
-    )
     # Breaks for y axis of RoC plots
     y_breaks <- seq(500, 7000, 500)
     # Bin sizes for base run and sensitivity analyses
@@ -76,16 +44,6 @@ if (tolower(record) == "inf1") {
     message("Record not found.")
 }
 
-# Data #####
-
-counts_harmonised <- rio::import(input_file, sheet = "counts_harmonised")
-
-metadata <- rio::import(input_file, sheet = "sample_metadata")
-
-zones <- rio::import(input_file, sheet = "zonation")
-
-taxon_lookup <- rio::import(input_file, sheet = "taxon_lookup")
-
 # Rate of Change ####
 
 ## Prepare data for RRatepol input
@@ -95,7 +53,6 @@ community <- counts_harmonised |>
     rename(sample_id = sample)
 
 ages <- metadata |>
-    filter(excludeSample == "no") |>
     select(sample, ageCalBP) |>
     rename(sample_id = sample, age = ageCalBP) |>
     mutate(age = as.numeric(age))
@@ -131,8 +88,6 @@ ages |>
 ## Run
 
 ### Decide bin size pre-run (based on age resolution)
-
-set.seed(777)
 
 roc <- RRatepol::estimate_roc(
     data_source_community = community,
@@ -230,13 +185,13 @@ roc_s2_plot <- RRatepol::plot_roc(
 ) +
     labs(title = paste("RoC", bin_s2))
 
-library(patchwork)
-
 roc_sensitivity_check <- roc_plot + roc_s1_plot + roc_s2_plot
 
 roc_sensitivity_check
 
-# GAM trends (smooth line on plot) #####
+# Visualisation with zone-based palette #####
+
+## GAM trends (smooth line on plot) #####
 
 roc_trend <- roc_peaks |>
     mutate(
@@ -262,9 +217,8 @@ roc_s2_trend <- roc_s2_peaks |>
         )
     )
 
-# INF1 RoC + sensitivity analysis figure #####
 
-## Panel A: RoC plot
+## Panel A: selected bin size RoC plot
 
 roc_plot <- ggplot(roc_peaks, aes(x = ROC, y = Age)) +
     geom_rect(
@@ -303,8 +257,8 @@ roc_plot <- ggplot(roc_peaks, aes(x = ROC, y = Age)) +
     ) +
     scale_fill_manual(
         name = "Pollen zones",
-        values = retro_palette,
-        breaks = names(retro_palette)
+        values = palette,
+        breaks = names(palette)
     ) +
     guides(
         fill = guide_legend(
@@ -365,8 +319,8 @@ roc_s1_plot <- ggplot(roc_s1_peaks, aes(x = ROC, y = Age)) +
     ) +
     scale_fill_manual(
         name = "Pollen zones",
-        values = retro_palette,
-        breaks = names(retro_palette)
+        values = palette,
+        breaks = names(palette)
     ) +
     guides(
         fill = guide_legend(
@@ -431,8 +385,8 @@ roc_s2_plot <- ggplot(roc_s2_peaks, aes(x = ROC, y = Age)) +
     ) +
     scale_fill_manual(
         name = "Pollen zones",
-        values = retro_palette,
-        breaks = names(retro_palette)
+        values = palette,
+        breaks = names(palette)
     ) +
     guides(
         fill = guide_legend(
@@ -458,54 +412,10 @@ roc_s2_plot <- ggplot(roc_s2_peaks, aes(x = ROC, y = Age)) +
         axis.ticks.y = element_blank()
     )
 
-# Combined figure
+## Combined figure
 
-library(patchwork)
-
-roc_sensitivity_check <- (roc_plot + roc_s1_plot + roc_s2_plot) +
+roc_sensitivity <- (roc_plot + roc_s1_plot + roc_s2_plot) +
     plot_layout(ncol = 3, guides = "collect") &
     theme(legend.position = "right")
 
-roc_sensitivity_check
-
-svg(
-    filename = paste0(
-        "./Figures/",
-        record,
-        "_roc_sensitivity_",
-        Sys.Date(),
-        ".svg"
-    ),
-    width = 16, height = 9
-)
-roc_sensitivity_check
-dev.off()
-
-ggsave(
-    filename = paste0(
-        "./Figures/",
-        record,
-        "_roc_sensitivity_",
-        Sys.Date(),
-        ".png"
-    ),
-    plot = roc_sensitivity_check,
-    width = 16, height = 9
-)
-
-# Save table of results #####
-
-rio::export(
-    list(
-        "main_roc" = roc_trend,
-        "roc_s1" = roc_s1_trend,
-        "roc_s2" = roc_s2_trend
-    ),
-    file = paste0(
-        "./outputs/",
-        record,
-        "_roc", roc_bin_size, "_",
-        Sys.Date(),
-        ".xlsx"
-    )
-)
+roc_sensitivity
