@@ -20,7 +20,7 @@ The records differ in depositional setting, temporal resolution and ecological c
 The repository is organised around the following components. Not every component is necessarily applied in the same form to both records; record-specific implementations and settings belong with their respective scripts.
 
 | Component | Purpose |
-| --- | --- | --- |
+| --- | --- |
 | Palynological richness (Rarefaction analysis) | Compare sample-level richness standardising pollen count |
 | Rate of Change (RoC) analysis| Quantify compositional turnover in relation to time|
 | Community Trajectory Analysis (CTA) | Characterise assemblage trajectories and compositional heterogeneity with pollen zone-wise internal variance, sample-wise and taxon-wise contributions to record- and pollen zone-wise variance |
