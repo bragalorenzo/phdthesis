@@ -1,0 +1,115 @@
+﻿Type,Name,GBIF ID,Level
+Species,Arbutus unedo L.,2882803,-
+Species,Aristolochia clematitis L.,2873991,-
+Species,Aristolochia rotunda L.,2874019,-
+Species,Carpinus betulus L.,2875818,-
+Species,Cladium mariscus (L.) Pohl,2731327,-
+Species,Corylus avellana L.,2875979,-
+Species,Fraxinus ornus L.,3172347,-
+Species,Hedera helix L.,8351737,-
+Species,Hydrocharis morsus-ranae L.,5329266,-
+Species,Lythrum salicaria L.,3188736,-
+Species,Myriophyllum spicatum L.,5361760,-
+Species,Myriophyllum alterniflorum DC.,5361773,-
+Species,Myriophyllum verticillatum L.,5361779,-
+Species,"Roemeria argemone (L.) C.Morales, R.Mend. & Romero García",5531435,-
+Species,Phragmites australis (Cav.) Trin. ex Steud.,5290149,-
+Species,Quercus ilex L.,2879098,-
+Species,Thalictrum aquilegiifolium L.,6376340,-
+Species,Urtica pilulifera L.,5670646,-
+Genus,Abies Mill.,2684876,-
+Genus,Alnus Mill.,2876099,-
+Genus,Aristolochia L.,2873978,-
+Genus,Artemisia L.,3120641,-
+Genus,Asphodelus L.,7502499,-
+Genus,Beta L.,3083586,-
+Genus,Buxus L.,2984666,-
+Genus,Campanula L.,3161935,-
+Genus,Cannabis L.,2984538,-
+Genus,Carex L.,2721893,-
+Genus,Centaurea L.,3127469,-
+Genus,Cerinthe L.,2926107,-
+Genus,Cistus L.,2874026,-
+Genus,Convolvulus L.,2928386,-
+Genus,Cyperus L.,2713455,-
+Genus,Erica L.,2882780,-
+Genus,Euphorbia L.,11397237,-
+Genus,Filipendula Mill.,2987968,-
+Genus,Fumaria L.,2888567,-
+Genus,Helianthemum Mill.,2874068,-
+Genus,Herniaria L.,3085796,-
+Genus,Hippophae L.,3039284,-
+Genus,Juglans L.,3054350,-
+Genus,Juncus L.,2701072,-
+Genus,Lamium L.,2926678,-
+Genus,Lemna L.,2867567,-
+Genus,Lonicera L.,2888645,-
+Genus,Lotus L.,10220564,-
+Genus,Myriophyllum L.,2984253,-
+Genus,Olea L.,3172244,-
+Genus,Panicum L.,2705064,-
+Genus,Pinus L.,2684241,-
+Genus,Plantago L.,3189695,-
+Genus,Polygonum L.,2889077,-
+Genus,Populus L.,3040183,-
+Genus,Rhamnus L.,3039471,-
+Genus,Ricinus L.,9188216,-
+Genus,Salix L.,3039576,-
+Genus,Symphytum L.,2926061,-
+Genus,Ulmus L.,2984510,-
+Genus,Valeriana L.,2888741,-
+Genus,Valerianella Mill.,2888767,-
+Genus,Veratrum L.,2742049,-
+Genus,Rumex L.,2888942,-
+Family,Apiaceae,6720,-
+Family,Boraginaceae,2498,-
+Family,Caryophyllaceae,2518,-
+Family,Amaranthaceae,3064,-
+Family,Cyperaceae,7708,-
+Family,Ericaceae,2505,-
+Beug,Ephedra > Ephedra dystachya-Typ,16,2
+Beug,Fabaceae p.p.  >  Trifolium  >  Trifolium repens-Typ,19,3
+Beug,Ornithogalum umbellatum-Typ,54,1
+Beug,Quercus  >  Quercus cerris-Typ,42,2
+Beug,Quercus  >  Quercus robur-pubescens-Typ,41,2
+Beug,Ostrya-Typ,369,1
+Punt,Acer campestre type,101,1
+Punt,Angelica palustris type,170,1
+Punt,Anthemis arvensis type,325,1
+Punt,Carduus crispus type,336,1
+Punt,Centaurea nigra type,338,1
+Punt,Cichorium intybus type,148,1
+Punt,Cirsium palustre type,341,1
+Punt,Cornus mas type,248,1
+Punt,Fraxinus excelsior type,236,1
+Punt,Hypericum perforatum type,47,1
+Punt,Knautia arvensis type,118,1
+Punt,Lactuca sativa type,149,1
+Punt,Plantago lanceolata type,92,1
+Punt,Plantago major type,93,1
+Punt,Ranunculus acris type  >  Clematis vitalba group,200,2
+Punt,Ranunculus acris type  >  Pulsatilla vulgaris group,201,2
+Punt,Ranunculus acris type  >  Ranunculus acris group,203,2
+Punt,Ranunculus acris type  >  Ranunculus aquatilis group,204,2
+Punt,Senecio vulgaris type,326,1
+Punt,Sonchus oleraceus type,152,1
+Punt,Sparganium emersum type,33,1
+Punt,Sparganium erectum type,34,1
+Punt,Thalictrum flavum type,267,1
+Punt,Typha latifolia type,35,1
+Punt,Urtica dioica type,145,1
+Punt,Valerianella locusta type  >  Valerianella dentata group,69,2
+Punt,Xanthium strumarium type  >  Xanthium strumarium group,284,2
+Punt,Tilia platyphyllos type,218,1
+Moore,Allium type,22,1
+Moore,Aster type,31,1
+Moore,Galium type,55,1
+Moore,Juniperus type,90,1
+Moore,Mentha type,5,1
+Moore,Nymphaea alba type,258,1
+Moore,Scilla type,175,1
+Moore,Sinapis type,21,1
+Andersen,Avena-Triticum group,3,1
+Andersen,Hordeum group,2,1
+Andersen,Wild grass group,1,1
+Florenzano,Cichorieae (undiff.),5,1

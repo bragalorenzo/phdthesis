@@ -1,0 +1,375 @@
+﻿Table,Type,Name,GBIF ID,GBIF URL,Matched with,Matches,Score,Score Percent
+Pollen taxon score,Florenzano,Cichorieae (undiff.),5,https://www.gbif.org/species/5,"Andryala integrifolia L. (GBIF 3105508) | Chondrilla juncea L. (GBIF 8537667) | Cichorium intybus L. (GBIF 5392252) | Cichorium pumilum Jacq. (GBIF 5392270) | Crepis albida Vill. (GBIF 7770027) | Crepis bursifolia L. (GBIF 5403541) | Crepis sancta (L.) Bornm. (GBIF 5403605) | Crepis setosa Haller fil. (GBIF 4245384) | Crepis vesicaria L. (GBIF 5403709) | Hypochaeris glabra L. (GBIF 3093911) | Lactuca sativa L. (GBIF 7403263) | Lactuca serriola L. (GBIF 3140490) | Lapsana communis L. (GBIF 3134857) | Leontodon hispidus L. (GBIF 3137498) | Leontodon tuberosus Batt., 1889 (GBIF 4252823) | Picris hieracioides L. (GBIF 3093337) | Picris hieracioides Sibth. & Sm., 1813 (GBIF 7986596) | Reichardia picroides (L.) Roth (GBIF 5385655) | Sonchus arvensis L. (GBIF 3105813) | Sonchus asper (L.) Hill (GBIF 3105782) | Sonchus oleraceus L. (GBIF 8228544) | Sonchus tenerrimus L. (GBIF 3105768) | Taraxacum officinale Weber ex F.H.Wigg. (GBIF 5394163) | Urospermum dalechampii (L.) Scop. ex F.W.Schmidt (GBIF 3096622) | Urospermum picroides (L.) Scop. ex F.W.Schmidt (GBIF 3096624) | Scolymus hispanicus L. (GBIF 5403742) | Tragopogon dubius Scop. (GBIF 6443709) | Tragopogon porrifolius L. (GBIF 5386938)",28,0.098592,9.86
+Pollen taxon score,Family,Apiaceae,6720,https://www.gbif.org/species/6720,Aegopodium podagraria L. (GBIF 3034620) | Ammi majus L. (GBIF 3034182) | Chaerophyllum temulum L. (GBIF 3034650) | Conium maculatum L. (GBIF 3034807) | Crithmum maritimum L. (GBIF 3632234) | Cyclospermum leptophyllum (Pers.) Sprague (GBIF 8350395) | Daucus broteroi Ten. (GBIF 7704950) | Daucus carota L. (GBIF 3034742) | Echinophora spinosa L. (GBIF 5538709) | Echinophora tenuifolia L. (GBIF 5538701) | Eryngium campestre L. (GBIF 3034426) | Eryngium maritimum L. (GBIF 3034391) | Ferula communis L. (GBIF 8048981) | Foeniculum vulgare Mill. (GBIF 3034922) | Helosciadium inundatum (L.) W.D.J.Koch (GBIF 3631418) | Myrrhis odorata (L.) Scop. (GBIF 3034681) | Oenanthe fistulosa L. (GBIF 5371890) | Petroselinum crispum (Mill.) Fuss (GBIF 7828157) | Scandix pecten-veneris L. (GBIF 3034233) | Seseli tortuosum L. (GBIF 7904530) | Tordylium apulum L. (GBIF 3034902) | Torilis nodosa (L.) Gaertn. (GBIF 3034819) | Visnaga daucoides Gaertn. (GBIF 5371753),23,0.080986,8.10
+Pollen taxon score,Family,Caryophyllaceae,2518,https://www.gbif.org/species/2518,Agrostemma githago L. (GBIF 3085368) | Cerastium glomeratum Thuill. (GBIF 3085440) | Cerastium siculum Guss. (GBIF 3085474) | Cerastium tomentosum L. (GBIF 3085438) | Dianthus armeria L. (GBIF 3085413) | Dianthus carthusianorum L. (GBIF 8400876) | Dianthus hyssopifolius L. (GBIF 7267549) | Dianthus virgineus L. (GBIF 7487287) | Petrorhagia dubia (Raf.) G.López & Romo (GBIF 3085625) | Polycarpon tetraphyllum (L.) L. (GBIF 3085381) | Saponaria officinalis L. (GBIF 3085360) | Silene colorata Poir. (GBIF 7566895) | Silene dichotoma Ehrh. (GBIF 5384818) | Silene dioica (L.) Clairv. (GBIF 5384795) | Silene flos-cuculi (L.) Greuter & Burdet (GBIF 5384738) | Silene gallica L. (GBIF 5384848) | Silene latifolia Poir. (GBIF 5384805) | Silene vulgaris (Moench) Garcke (GBIF 9172281) | Spergularia rubra (L.) J.Presl & C.Presl (GBIF 3085633) | Stellaria media (L.) Vill. (GBIF 5384604),20,0.070423,7.04
+Pollen taxon score,Family,Amaranthaceae,3064,https://www.gbif.org/species/3064,"Amaranthus albus L. (GBIF 7905507) | Amaranthus deflexus L. (GBIF 5384396) | Amaranthus retroflexus L. (GBIF 6109534) | Amaranthus viridis L. (GBIF 5384334) | Atriplex halimus L. (GBIF 3083718) | Atriplex patula L. (GBIF 3083728) | Atriplex prostrata DC. (GBIF 3083786) | Beta vulgaris L. (GBIF 8971274) | Celosia argentea L. (GBIF 3085191) | Chenopodiastrum murale (L.) S.Fuentes, Uotila & Borsch (GBIF 8149099) | Chenopodium album L. (GBIF 3083838) | Chenopodium ficifolium Sm. (GBIF 3083862) | Chenopodium opulifolium Schrad. ex W.D.J.Koch & Ziz (GBIF 3083903) | Chenopodium vulvaria L. (GBIF 3083932) | Salsola squarrosa Steven ex Moq. (GBIF 3756197) | Salsola tragus L. (GBIF 3083945) | Soda inermis (Moench) Fourr. (GBIF 3758349)",17,0.059859,5.99
+Pollen taxon score,Moore,Aster type,31,https://www.gbif.org/species/31,"Bellis annua L. (GBIF 3117441) | Bellis perennis L. (GBIF 3117424) | Bellis sylvestris Cirillo (GBIF 3117401) | Erigeron bonariensis L. (GBIF 3146717) | Erigeron karvinskianus DC. (GBIF 3147168) | Erigeron sumatrensis Retz. (GBIF 3146683) | Petasites hybridus (L.) G.Gaertn., B.Mey. & Scherb. (GBIF 9490132) | Senecio angulatus L.fil. (GBIF 4933568) | Senecio leucanthemifolius Poir. (GBIF 7624085) | Senecio vernalis Waldst. & Kit. (GBIF 6063730) | Senecio vulgaris L. (GBIF 3108983) | Tussilago farfara L. (GBIF 3149879)",12,0.042254,4.23
+Pollen taxon score,Family,Boraginaceae,2498,https://www.gbif.org/species/2498,Anchusa azurea Mill. (GBIF 5341198) | Anchusa hybrida Ten. (GBIF 5662213) | Anchusa officinalis L. (GBIF 5341201) | Borago officinalis L. (GBIF 2926110) | Cerinthe major L. (GBIF 2926108) | Cynoglossum creticum Mill. (GBIF 4064467) | Echium italicum L. (GBIF 2925889) | Echium plantagineum L. (GBIF 2925895) | Echium sabulicola Pomel (GBIF 7295578) | Myosotis ramosissima Rochel (GBIF 7589756) | Myosotis sylvatica Ehrh. ex Hoffm. (GBIF 5341175) | Pulmonaria saccharata Mill. (GBIF 5341203),12,0.042254,4.23
+Pollen taxon score,Genus,Euphorbia L.,11397237,https://www.gbif.org/species/11397237,Euphorbia amygdaloides L. (GBIF 3065239) | Euphorbia characias L. (GBIF 3067353) | Euphorbia cyparissias L. (GBIF 3070106) | Euphorbia helioscopia L. (GBIF 3066367) | Euphorbia lathyris L. (GBIF 3066965) | Euphorbia maculata L. (GBIF 3067119) | Euphorbia peplis L. (GBIF 3066482) | Euphorbia peplus L. (GBIF 3066386) | Euphorbia prostrata Aiton (GBIF 3067891) | Euphorbia segetalis L. (GBIF 3066495),10,0.035211,3.52
+Pollen taxon score,Punt,Cichorium intybus type,148,https://www.gbif.org/species/148,Andryala integrifolia L. (GBIF 3105508) | Cichorium intybus L. (GBIF 5392252) | Crepis vesicaria L. (GBIF 5403709) | Lapsana communis L. (GBIF 3134857) | Scorzoneroides autumnalis (L.) Moench (GBIF 3133512) | Leontodon hispidus L. (GBIF 3137498) | Helminthotheca echioides (L) Holub (GBIF 3141855) | Picris hieracioides L. (GBIF 3093337) | Taraxacum officinale Weber ex F.H.Wigg. (GBIF 5394163),9,0.031690,3.17
+Pollen taxon score,Moore,Sinapis type,21,https://www.gbif.org/species/21,Alliaria petiolata (M.Bieb.) Cavara & Grande (GBIF 5376075) | Bunias erucago L. (GBIF 3050357) | Cakile maritima Scop. (GBIF 3048831) | Diplotaxis erucoides (L.) DC. (GBIF 5376309) | Diplotaxis tenuifolia (L.) DC. (GBIF 5376426) | Lunaria annua L. (GBIF 5373324) | Raphanus raphanistrum L. (GBIF 3040983) | Sinapis alba L. (GBIF 3047621) | Sisymbrium officinale (L.) Scop. (GBIF 3046890),9,0.031690,3.17
+Pollen taxon score,Genus,Plantago L.,3189695,https://www.gbif.org/species/3189695,Plantago argentea Chaix (GBIF 7553757) | Plantago coronopus L. (GBIF 3189739) | Plantago lagopus L. (GBIF 8022932) | Plantago lanceolata L. (GBIF 8208358) | Plantago major L. (GBIF 3189767) | Plantago media L. (GBIF 3189747) | Plantago serraria L. (GBIF 4155863) | Plantago weldenii Rchb. (GBIF 7302991),8,0.028169,2.82
+Pollen taxon score,Beug,Fabaceae p.p.  >  Trifolium  >  Trifolium repens-Typ,19,https://www.gbif.org/species/19,Trifolium arvense L. (GBIF 5359246) | Trifolium campestre Schreb. (GBIF 5359477) | Trifolium dubium Sibth. (GBIF 5359429) | Trifolium fragiferum L. (GBIF 5358935) | Trifolium repens L. (GBIF 5358748) | Trifolium resupinatum L. (GBIF 5359175) | Trifolium striatum L. (GBIF 5358683),7,0.024648,2.46
+Pollen taxon score,Genus,Centaurea L.,3127469,https://www.gbif.org/species/3127469,Centaurea calcitrapa L. (GBIF 3128483) | Centaurea cineraria L. (GBIF 3128305) | Centaurea cyanus L. (GBIF 3089561) | Centaurea napifolia L. (GBIF 3128601) | Centaurea paniculata L. (GBIF 3127613) | Centaurea sphaerocephala L. (GBIF 3128081),6,0.021127,2.11
+Pollen taxon score,Punt,Anthemis arvensis type,325,https://www.gbif.org/species/325,Anthemis arvensis L. (GBIF 3102781) | Anthemis cotula L. (GBIF 8035698) | Glebionis segetum (L.) Fourr. (GBIF 3141101) | Matricaria discoidea DC. (GBIF 3103791) | Matricaria chamomilla L. (GBIF 8370958),5,0.017606,1.76
+Pollen taxon score,Genus,Convolvulus L.,2928386,https://www.gbif.org/species/2928386,Convolvulus althaeoides L. (GBIF 2928400) | Convolvulus arvensis L. (GBIF 2928390) | Convolvulus cantabrica L. (GBIF 3681277) | Convolvulus cneorum L. (GBIF 8069501) | Convolvulus sabatius Viv. (GBIF 3678857),5,0.017606,1.76
+Pollen taxon score,Moore,Galium type,55,https://www.gbif.org/species/55,Galium aparine L. (GBIF 2913548) | Galium verrucosum Huds. (GBIF 2914754) | Galium verum L. (GBIF 9063248) | Rubia peregrina L. (GBIF 2892347) | Sherardia arvensis L. (GBIF 5339050),5,0.017606,1.76
+Pollen taxon score,Genus,Lotus L.,10220564,https://www.gbif.org/species/10220564,Lotus conimbricensis Brot. (GBIF 5356971) | Lotus corniculatus L. (GBIF 5357013) | Lotus hirsutus L. (GBIF 5354799) | Lotus ornithopodioides L. (GBIF 5357035) | Lotus pedunculatus Cav. (GBIF 5356854),5,0.017606,1.76
+Pollen taxon score,Genus,Campanula L.,3161935,https://www.gbif.org/species/3161935,Campanula erinus L. (GBIF 5409852) | Campanula medium L. (GBIF 5411453) | Campanula patula L. (GBIF 5410564) | Campanula rapunculus L. (GBIF 5411920),4,0.014085,1.41
+Pollen taxon score,Genus,Lamium L.,2926678,https://www.gbif.org/species/2926678,Lamium amplexicaule L. (GBIF 2926679) | Lamium bifidum Cirillo (GBIF 7308131) | Lamium maculatum (L.) L. (GBIF 2926684) | Lamium purpureum L. (GBIF 2926682),4,0.014085,1.41
+Pollen taxon score,Moore,Mentha type,5,https://www.gbif.org/species/5,Clinopodium nepeta (L.) Kuntze (GBIF 8916040) | Mentha suaveolens Ehrh. (GBIF 2927190) | Origanum majorana L. (GBIF 2926615) | Thymus vulgaris L. (GBIF 5341442),4,0.014085,1.41
+Pollen taxon score,Genus,Populus L.,3040183,https://www.gbif.org/species/3040183,Populus alba L. (GBIF 3040233) | Populus nigra L. (GBIF 3040227) | Populus × canadensis Moench (GBIF 8190077) | Populus × canescens (Aiton) Sm. (GBIF 3040185),4,0.014085,1.41
+Pollen taxon score,Beug,Quercus  >  Quercus robur-pubescens-Typ,41,https://www.gbif.org/species/41,Quercus robur L. (GBIF 2878688) | Quercus petraea (Matt.) Liebl. (GBIF 2880130) | Quercus pubescens Willd. (GBIF 2881283) | Quercus rubra L. (GBIF 2880539),4,0.014085,1.41
+Pollen taxon score,Punt,Ranunculus acris type  >  Ranunculus acris group,203,https://www.gbif.org/species/203,Ranunculus bulbosus L. (GBIF 3033329) | Ranunculus lanuginosus L. (GBIF 7826351) | Ranunculus muricatus L. (GBIF 3033318) | Ranunculus repens L. (GBIF 3033339),4,0.014085,1.41
+Pollen taxon score,Punt,Sonchus oleraceus type,152,https://www.gbif.org/species/152,Aetheorhiza bulbosa (L.) Cass. (GBIF 3143051) | Sonchus arvensis L. (GBIF 3105813) | Sonchus asper (L.) Hill (GBIF 3105782) | Sonchus oleraceus L. (GBIF 8228544),4,0.014085,1.41
+Pollen taxon score,Punt,Urtica dioica type,145,https://www.gbif.org/species/145,Parietaria judaica L. (GBIF 5361801) | Parietaria officinalis L. (GBIF 5361803) | Urtica dioica L. (GBIF 7960979) | Urtica urens L. (GBIF 5361815),4,0.014085,1.41
+Pollen taxon score,Punt,Acer campestre type,101,https://www.gbif.org/species/101,Acer campestre L. (GBIF 3189863) | Acer platanoides L. (GBIF 3189846) | Acer pseudoplatanus L. (GBIF 3189870),3,0.010563,1.06
+Pollen taxon score,Genus,Artemisia L.,3120641,https://www.gbif.org/species/3120641,Artemisia absinthium L. (GBIF 3121319) | Artemisia argentea L'Hér. (GBIF 3120679) | Artemisia vulgaris L. (GBIF 3120946),3,0.010563,1.06
+Pollen taxon score,Genus,Cistus L.,2874026,https://www.gbif.org/species/2874026,Cistus creticus L. (GBIF 6438085) | Cistus monspeliensis L. (GBIF 2874030) | Cistus salviifolius L. (GBIF 2874027),3,0.010563,1.06
+Pollen taxon score,Family,Ericaceae,2505,https://www.gbif.org/species/2505,Arbutus unedo L. (GBIF 2882803) | Erica arborea L. (GBIF 5333410) | Erica multiflora L. (GBIF 7373031),3,0.010563,1.06
+Pollen taxon score,Moore,Juniperus type,90,https://www.gbif.org/species/90,Cupressus sempervirens L. (GBIF 2684030) | Juniperus communis L. (GBIF 2684709) | Juniperus oxycedrus L. (GBIF 2684451),3,0.010563,1.06
+Pollen taxon score,Genus,Lonicera L.,2888645,https://www.gbif.org/species/2888645,Lonicera etrusca Santi (GBIF 5334247) | Lonicera implexa Aiton (GBIF 7272699) | Lonicera japonica Thunb. (GBIF 5334240),3,0.010563,1.06
+Pollen taxon score,Genus,Pinus L.,2684241,https://www.gbif.org/species/2684241,Pinus halepensis Mill. (GBIF 5285604) | Pinus pinaster Aiton (GBIF 5285565) | Pinus pinea L. (GBIF 5285165),3,0.010563,1.06
+Pollen taxon score,Punt,Carduus crispus type,336,https://www.gbif.org/species/336,Carduus defloratus L. (GBIF 3114563) | Carduus nutans L. (GBIF 8185959),2,0.007042,0.70
+Pollen taxon score,Punt,Cirsium palustre type,341,https://www.gbif.org/species/341,Cirsium arvense (L.) Scop. (GBIF 3113414) | Cirsium vulgare (Savi) Ten. (GBIF 3112801),2,0.007042,0.70
+Pollen taxon score,Genus,Erica L.,2882780,https://www.gbif.org/species/2882780,Erica arborea L. (GBIF 5333410) | Erica multiflora L. (GBIF 7373031),2,0.007042,0.70
+Pollen taxon score,Punt,Fraxinus excelsior type,236,https://www.gbif.org/species/236,Fraxinus angustifolia Vahl (GBIF 7325877) | Fraxinus excelsior L. (GBIF 3172358),2,0.007042,0.70
+Pollen taxon score,Genus,Fumaria L.,2888567,https://www.gbif.org/species/2888567,Fumaria bastardii Boreau (GBIF 9228111) | Fumaria capreolata L. (GBIF 5334218),2,0.007042,0.70
+Pollen taxon score,Genus,Juglans L.,3054350,https://www.gbif.org/species/3054350,Juglans nigra L. (GBIF 3054357) | Juglans regia L. (GBIF 3054368),2,0.007042,0.70
+Pollen taxon score,Punt,Lactuca sativa type,149,https://www.gbif.org/species/149,Lactuca sativa L. (GBIF 7403263) | Lactuca serriola L. (GBIF 3140490),2,0.007042,0.70
+Pollen taxon score,Beug,Ostrya-Typ,369,https://www.gbif.org/species/369,Ostrya carpinifolia Scop. (GBIF 5332305) | Carpinus orientalis Mill. (GBIF 2875780),2,0.007042,0.70
+Pollen taxon score,Beug,Quercus  >  Quercus cerris-Typ,42,https://www.gbif.org/species/42,Quercus cerris L. (GBIF 2880580) | Quercus suber L. (GBIF 2879411),2,0.007042,0.70
+Pollen taxon score,Genus,Rhamnus L.,3039471,https://www.gbif.org/species/3039471,Rhamnus alaternus L. (GBIF 6371424) | Rhamnus saxatilis Jacq. (GBIF 6371028),2,0.007042,0.70
+Pollen taxon score,Punt,Senecio vulgaris type,326,https://www.gbif.org/species/326,Senecio vernalis Waldst. & Kit. (GBIF 6063730) | Senecio vulgaris L. (GBIF 3108983),2,0.007042,0.70
+Pollen taxon score,Genus,Ulmus L.,2984510,https://www.gbif.org/species/2984510,Ulmus glabra Huds. (GBIF 5361866) | Ulmus minor Mill. (GBIF 5361865),2,0.007042,0.70
+Pollen taxon score,Punt,Xanthium strumarium type  >  Xanthium strumarium group,284,https://www.gbif.org/species/284,Xanthium orientale L. (GBIF 3089146) | Xanthium strumarium L. (GBIF 3089154),2,0.007042,0.70
+Pollen taxon score,Genus,Alnus Mill.,2876099,https://www.gbif.org/species/2876099,Alnus glutinosa (L.) Gaertn. (GBIF 2876213),1,0.003521,0.35
+Pollen taxon score,Species,Arbutus unedo L.,2882803,https://www.gbif.org/species/2882803,Arbutus unedo L. (GBIF 2882803),1,0.003521,0.35
+Pollen taxon score,Genus,Aristolochia L.,2873978,https://www.gbif.org/species/2873978,Aristolochia rotunda L. (GBIF 2874019),1,0.003521,0.35
+Pollen taxon score,Species,Aristolochia rotunda L.,2874019,https://www.gbif.org/species/2874019,Aristolochia rotunda L. (GBIF 2874019),1,0.003521,0.35
+Pollen taxon score,Genus,Beta L.,3083586,https://www.gbif.org/species/3083586,Beta vulgaris L. (GBIF 8971274),1,0.003521,0.35
+Pollen taxon score,Genus,Buxus L.,2984666,https://www.gbif.org/species/2984666,Buxus sempervirens L. (GBIF 2984671),1,0.003521,0.35
+Pollen taxon score,Species,Carpinus betulus L.,2875818,https://www.gbif.org/species/2875818,Carpinus betulus L. (GBIF 2875818),1,0.003521,0.35
+Pollen taxon score,Punt,Centaurea nigra type,338,https://www.gbif.org/species/338,Centaurea calcitrapa L. (GBIF 3128483),1,0.003521,0.35
+Pollen taxon score,Genus,Cerinthe L.,2926107,https://www.gbif.org/species/2926107,Cerinthe major L. (GBIF 2926108),1,0.003521,0.35
+Pollen taxon score,Punt,Cornus mas type,248,https://www.gbif.org/species/248,Cornus mas L. (GBIF 3082263),1,0.003521,0.35
+Pollen taxon score,Species,Corylus avellana L.,2875979,https://www.gbif.org/species/2875979,Corylus avellana L. (GBIF 2875979),1,0.003521,0.35
+Pollen taxon score,Species,Fraxinus ornus L.,3172347,https://www.gbif.org/species/3172347,Fraxinus ornus L. (GBIF 3172347),1,0.003521,0.35
+Pollen taxon score,Species,Hedera helix L.,8351737,https://www.gbif.org/species/8351737,Hedera helix L. (GBIF 8351737),1,0.003521,0.35
+Pollen taxon score,Punt,Hypericum perforatum type,47,https://www.gbif.org/species/47,Hypericum perforatum L. (GBIF 3189486),1,0.003521,0.35
+Pollen taxon score,Genus,Olea L.,3172244,https://www.gbif.org/species/3172244,Olea europaea L. (GBIF 5415040),1,0.003521,0.35
+Pollen taxon score,Punt,Plantago lanceolata type,92,https://www.gbif.org/species/92,Plantago lanceolata L. (GBIF 8208358),1,0.003521,0.35
+Pollen taxon score,Punt,Plantago major type,93,https://www.gbif.org/species/93,Plantago major L. (GBIF 3189767),1,0.003521,0.35
+Pollen taxon score,Genus,Polygonum L.,2889077,https://www.gbif.org/species/2889077,Polygonum aviculare L. (GBIF 7821030),1,0.003521,0.35
+Pollen taxon score,Species,Quercus ilex L.,2879098,https://www.gbif.org/species/2879098,Quercus ilex L. (GBIF 2879098),1,0.003521,0.35
+Pollen taxon score,Punt,Ranunculus acris type  >  Clematis vitalba group,200,https://www.gbif.org/species/200,Clematis vitalba L. (GBIF 3033558),1,0.003521,0.35
+Pollen taxon score,Punt,Ranunculus acris type  >  Ranunculus aquatilis group,204,https://www.gbif.org/species/204,Ranunculus peltatus Schrank (GBIF 8365713),1,0.003521,0.35
+Pollen taxon score,Genus,Salix L.,3039576,https://www.gbif.org/species/3039576,Salix alba L. (GBIF 5372513),1,0.003521,0.35
+Pollen taxon score,Punt,Tilia platyphyllos type,218,https://www.gbif.org/species/218,Tilia × europaea L. (GBIF 3152046),1,0.003521,0.35
+Pollen taxon score,Genus,Valeriana L.,2888741,https://www.gbif.org/species/2888741,Valeriana officinalis L. (GBIF 2888763),1,0.003521,0.35
+Pollen taxon score total,,Total matched pairs used for scoring,,,,284,1.000000,100.00
+Flora species score,,Andryala integrifolia L.,3105508,https://www.gbif.org/species/3105508,"Cichorium intybus type (Punt, GBIF 148) | Cichorieae (undiff.) (Florenzano, GBIF 5)",2,0.007042,0.70
+Flora species score,,Arbutus unedo L.,2882803,https://www.gbif.org/species/2882803,"Arbutus unedo L. (Species, GBIF 2882803) | Ericaceae (Family, GBIF 2505)",2,0.007042,0.70
+Flora species score,,Aristolochia rotunda L.,2874019,https://www.gbif.org/species/2874019,"Aristolochia rotunda L. (Species, GBIF 2874019) | Aristolochia L. (Genus, GBIF 2873978)",2,0.007042,0.70
+Flora species score,,Beta vulgaris L.,8971274,https://www.gbif.org/species/8971274,"Beta L. (Genus, GBIF 3083586) | Amaranthaceae (Family, GBIF 3064)",2,0.007042,0.70
+Flora species score,,Centaurea calcitrapa L.,3128483,https://www.gbif.org/species/3128483,"Centaurea L. (Genus, GBIF 3127469) | Centaurea nigra type (Punt, GBIF 338)",2,0.007042,0.70
+Flora species score,,Cerinthe major L.,2926108,https://www.gbif.org/species/2926108,"Cerinthe L. (Genus, GBIF 2926107) | Boraginaceae (Family, GBIF 2498)",2,0.007042,0.70
+Flora species score,,Cichorium intybus L.,5392252,https://www.gbif.org/species/5392252,"Cichorium intybus type (Punt, GBIF 148) | Cichorieae (undiff.) (Florenzano, GBIF 5)",2,0.007042,0.70
+Flora species score,,Crepis vesicaria L.,5403709,https://www.gbif.org/species/5403709,"Cichorium intybus type (Punt, GBIF 148) | Cichorieae (undiff.) (Florenzano, GBIF 5)",2,0.007042,0.70
+Flora species score,,Erica arborea L.,5333410,https://www.gbif.org/species/5333410,"Erica L. (Genus, GBIF 2882780) | Ericaceae (Family, GBIF 2505)",2,0.007042,0.70
+Flora species score,,Erica multiflora L.,7373031,https://www.gbif.org/species/7373031,"Erica L. (Genus, GBIF 2882780) | Ericaceae (Family, GBIF 2505)",2,0.007042,0.70
+Flora species score,,Lactuca sativa L.,7403263,https://www.gbif.org/species/7403263,"Lactuca sativa type (Punt, GBIF 149) | Cichorieae (undiff.) (Florenzano, GBIF 5)",2,0.007042,0.70
+Flora species score,,Lactuca serriola L.,3140490,https://www.gbif.org/species/3140490,"Lactuca sativa type (Punt, GBIF 149) | Cichorieae (undiff.) (Florenzano, GBIF 5)",2,0.007042,0.70
+Flora species score,,Lapsana communis L.,3134857,https://www.gbif.org/species/3134857,"Cichorium intybus type (Punt, GBIF 148) | Cichorieae (undiff.) (Florenzano, GBIF 5)",2,0.007042,0.70
+Flora species score,,Leontodon hispidus L.,3137498,https://www.gbif.org/species/3137498,"Cichorium intybus type (Punt, GBIF 148) | Cichorieae (undiff.) (Florenzano, GBIF 5)",2,0.007042,0.70
+Flora species score,,Picris hieracioides L.,3093337,https://www.gbif.org/species/3093337,"Cichorium intybus type (Punt, GBIF 148) | Cichorieae (undiff.) (Florenzano, GBIF 5)",2,0.007042,0.70
+Flora species score,,Plantago lanceolata L.,8208358,https://www.gbif.org/species/8208358,"Plantago L. (Genus, GBIF 3189695) | Plantago lanceolata type (Punt, GBIF 92)",2,0.007042,0.70
+Flora species score,,Plantago major L.,3189767,https://www.gbif.org/species/3189767,"Plantago L. (Genus, GBIF 3189695) | Plantago major type (Punt, GBIF 93)",2,0.007042,0.70
+Flora species score,,Senecio vernalis Waldst. & Kit.,6063730,https://www.gbif.org/species/6063730,"Senecio vulgaris type (Punt, GBIF 326) | Aster type (Moore, GBIF 31)",2,0.007042,0.70
+Flora species score,,Senecio vulgaris L.,3108983,https://www.gbif.org/species/3108983,"Senecio vulgaris type (Punt, GBIF 326) | Aster type (Moore, GBIF 31)",2,0.007042,0.70
+Flora species score,,Sonchus arvensis L.,3105813,https://www.gbif.org/species/3105813,"Sonchus oleraceus type (Punt, GBIF 152) | Cichorieae (undiff.) (Florenzano, GBIF 5)",2,0.007042,0.70
+Flora species score,,Sonchus asper (L.) Hill,3105782,https://www.gbif.org/species/3105782,"Sonchus oleraceus type (Punt, GBIF 152) | Cichorieae (undiff.) (Florenzano, GBIF 5)",2,0.007042,0.70
+Flora species score,,Sonchus oleraceus L.,8228544,https://www.gbif.org/species/8228544,"Sonchus oleraceus type (Punt, GBIF 152) | Cichorieae (undiff.) (Florenzano, GBIF 5)",2,0.007042,0.70
+Flora species score,,Taraxacum officinale Weber ex F.H.Wigg.,5394163,https://www.gbif.org/species/5394163,"Cichorium intybus type (Punt, GBIF 148) | Cichorieae (undiff.) (Florenzano, GBIF 5)",2,0.007042,0.70
+Flora species score,,Acer campestre L.,3189863,https://www.gbif.org/species/3189863,"Acer campestre type (Punt, GBIF 101)",1,0.003521,0.35
+Flora species score,,Acer platanoides L.,3189846,https://www.gbif.org/species/3189846,"Acer campestre type (Punt, GBIF 101)",1,0.003521,0.35
+Flora species score,,Acer pseudoplatanus L.,3189870,https://www.gbif.org/species/3189870,"Acer campestre type (Punt, GBIF 101)",1,0.003521,0.35
+Flora species score,,Aegopodium podagraria L.,3034620,https://www.gbif.org/species/3034620,"Apiaceae (Family, GBIF 6720)",1,0.003521,0.35
+Flora species score,,Aetheorhiza bulbosa (L.) Cass.,3143051,https://www.gbif.org/species/3143051,"Sonchus oleraceus type (Punt, GBIF 152)",1,0.003521,0.35
+Flora species score,,Agrostemma githago L.,3085368,https://www.gbif.org/species/3085368,"Caryophyllaceae (Family, GBIF 2518)",1,0.003521,0.35
+Flora species score,,Alliaria petiolata (M.Bieb.) Cavara & Grande,5376075,https://www.gbif.org/species/5376075,"Sinapis type (Moore, GBIF 21)",1,0.003521,0.35
+Flora species score,,Alnus glutinosa (L.) Gaertn.,2876213,https://www.gbif.org/species/2876213,"Alnus Mill. (Genus, GBIF 2876099)",1,0.003521,0.35
+Flora species score,,Amaranthus albus L.,7905507,https://www.gbif.org/species/7905507,"Amaranthaceae (Family, GBIF 3064)",1,0.003521,0.35
+Flora species score,,Amaranthus deflexus L.,5384396,https://www.gbif.org/species/5384396,"Amaranthaceae (Family, GBIF 3064)",1,0.003521,0.35
+Flora species score,,Amaranthus retroflexus L.,6109534,https://www.gbif.org/species/6109534,"Amaranthaceae (Family, GBIF 3064)",1,0.003521,0.35
+Flora species score,,Amaranthus viridis L.,5384334,https://www.gbif.org/species/5384334,"Amaranthaceae (Family, GBIF 3064)",1,0.003521,0.35
+Flora species score,,Ammi majus L.,3034182,https://www.gbif.org/species/3034182,"Apiaceae (Family, GBIF 6720)",1,0.003521,0.35
+Flora species score,,Anchusa azurea Mill.,5341198,https://www.gbif.org/species/5341198,"Boraginaceae (Family, GBIF 2498)",1,0.003521,0.35
+Flora species score,,Anchusa hybrida Ten.,5662213,https://www.gbif.org/species/5662213,"Boraginaceae (Family, GBIF 2498)",1,0.003521,0.35
+Flora species score,,Anchusa officinalis L.,5341201,https://www.gbif.org/species/5341201,"Boraginaceae (Family, GBIF 2498)",1,0.003521,0.35
+Flora species score,,Anthemis arvensis L.,3102781,https://www.gbif.org/species/3102781,"Anthemis arvensis type (Punt, GBIF 325)",1,0.003521,0.35
+Flora species score,,Anthemis cotula L.,8035698,https://www.gbif.org/species/8035698,"Anthemis arvensis type (Punt, GBIF 325)",1,0.003521,0.35
+Flora species score,,Artemisia absinthium L.,3121319,https://www.gbif.org/species/3121319,"Artemisia L. (Genus, GBIF 3120641)",1,0.003521,0.35
+Flora species score,,Artemisia argentea L'Hér.,3120679,https://www.gbif.org/species/3120679,"Artemisia L. (Genus, GBIF 3120641)",1,0.003521,0.35
+Flora species score,,Artemisia vulgaris L.,3120946,https://www.gbif.org/species/3120946,"Artemisia L. (Genus, GBIF 3120641)",1,0.003521,0.35
+Flora species score,,Atriplex halimus L.,3083718,https://www.gbif.org/species/3083718,"Amaranthaceae (Family, GBIF 3064)",1,0.003521,0.35
+Flora species score,,Atriplex patula L.,3083728,https://www.gbif.org/species/3083728,"Amaranthaceae (Family, GBIF 3064)",1,0.003521,0.35
+Flora species score,,Atriplex prostrata DC.,3083786,https://www.gbif.org/species/3083786,"Amaranthaceae (Family, GBIF 3064)",1,0.003521,0.35
+Flora species score,,Bellis annua L.,3117441,https://www.gbif.org/species/3117441,"Aster type (Moore, GBIF 31)",1,0.003521,0.35
+Flora species score,,Bellis perennis L.,3117424,https://www.gbif.org/species/3117424,"Aster type (Moore, GBIF 31)",1,0.003521,0.35
+Flora species score,,Bellis sylvestris Cirillo,3117401,https://www.gbif.org/species/3117401,"Aster type (Moore, GBIF 31)",1,0.003521,0.35
+Flora species score,,Borago officinalis L.,2926110,https://www.gbif.org/species/2926110,"Boraginaceae (Family, GBIF 2498)",1,0.003521,0.35
+Flora species score,,Bunias erucago L.,3050357,https://www.gbif.org/species/3050357,"Sinapis type (Moore, GBIF 21)",1,0.003521,0.35
+Flora species score,,Buxus sempervirens L.,2984671,https://www.gbif.org/species/2984671,"Buxus L. (Genus, GBIF 2984666)",1,0.003521,0.35
+Flora species score,,Cakile maritima Scop.,3048831,https://www.gbif.org/species/3048831,"Sinapis type (Moore, GBIF 21)",1,0.003521,0.35
+Flora species score,,Campanula erinus L.,5409852,https://www.gbif.org/species/5409852,"Campanula L. (Genus, GBIF 3161935)",1,0.003521,0.35
+Flora species score,,Campanula medium L.,5411453,https://www.gbif.org/species/5411453,"Campanula L. (Genus, GBIF 3161935)",1,0.003521,0.35
+Flora species score,,Campanula patula L.,5410564,https://www.gbif.org/species/5410564,"Campanula L. (Genus, GBIF 3161935)",1,0.003521,0.35
+Flora species score,,Campanula rapunculus L.,5411920,https://www.gbif.org/species/5411920,"Campanula L. (Genus, GBIF 3161935)",1,0.003521,0.35
+Flora species score,,Carduus defloratus L.,3114563,https://www.gbif.org/species/3114563,"Carduus crispus type (Punt, GBIF 336)",1,0.003521,0.35
+Flora species score,,Carduus nutans L.,8185959,https://www.gbif.org/species/8185959,"Carduus crispus type (Punt, GBIF 336)",1,0.003521,0.35
+Flora species score,,Carpinus betulus L.,2875818,https://www.gbif.org/species/2875818,"Carpinus betulus L. (Species, GBIF 2875818)",1,0.003521,0.35
+Flora species score,,Carpinus orientalis Mill.,2875780,https://www.gbif.org/species/2875780,"Ostrya-Typ (Beug, GBIF 369)",1,0.003521,0.35
+Flora species score,,Celosia argentea L.,3085191,https://www.gbif.org/species/3085191,"Amaranthaceae (Family, GBIF 3064)",1,0.003521,0.35
+Flora species score,,Centaurea cineraria L.,3128305,https://www.gbif.org/species/3128305,"Centaurea L. (Genus, GBIF 3127469)",1,0.003521,0.35
+Flora species score,,Centaurea cyanus L.,3089561,https://www.gbif.org/species/3089561,"Centaurea L. (Genus, GBIF 3127469)",1,0.003521,0.35
+Flora species score,,Centaurea napifolia L.,3128601,https://www.gbif.org/species/3128601,"Centaurea L. (Genus, GBIF 3127469)",1,0.003521,0.35
+Flora species score,,Centaurea paniculata L.,3127613,https://www.gbif.org/species/3127613,"Centaurea L. (Genus, GBIF 3127469)",1,0.003521,0.35
+Flora species score,,Centaurea sphaerocephala L.,3128081,https://www.gbif.org/species/3128081,"Centaurea L. (Genus, GBIF 3127469)",1,0.003521,0.35
+Flora species score,,Cerastium glomeratum Thuill.,3085440,https://www.gbif.org/species/3085440,"Caryophyllaceae (Family, GBIF 2518)",1,0.003521,0.35
+Flora species score,,Cerastium siculum Guss.,3085474,https://www.gbif.org/species/3085474,"Caryophyllaceae (Family, GBIF 2518)",1,0.003521,0.35
+Flora species score,,Cerastium tomentosum L.,3085438,https://www.gbif.org/species/3085438,"Caryophyllaceae (Family, GBIF 2518)",1,0.003521,0.35
+Flora species score,,Chaerophyllum temulum L.,3034650,https://www.gbif.org/species/3034650,"Apiaceae (Family, GBIF 6720)",1,0.003521,0.35
+Flora species score,,"Chenopodiastrum murale (L.) S.Fuentes, Uotila & Borsch",8149099,https://www.gbif.org/species/8149099,"Amaranthaceae (Family, GBIF 3064)",1,0.003521,0.35
+Flora species score,,Chenopodium album L.,3083838,https://www.gbif.org/species/3083838,"Amaranthaceae (Family, GBIF 3064)",1,0.003521,0.35
+Flora species score,,Chenopodium ficifolium Sm.,3083862,https://www.gbif.org/species/3083862,"Amaranthaceae (Family, GBIF 3064)",1,0.003521,0.35
+Flora species score,,Chenopodium opulifolium Schrad. ex W.D.J.Koch & Ziz,3083903,https://www.gbif.org/species/3083903,"Amaranthaceae (Family, GBIF 3064)",1,0.003521,0.35
+Flora species score,,Chenopodium vulvaria L.,3083932,https://www.gbif.org/species/3083932,"Amaranthaceae (Family, GBIF 3064)",1,0.003521,0.35
+Flora species score,,Chondrilla juncea L.,8537667,https://www.gbif.org/species/8537667,"Cichorieae (undiff.) (Florenzano, GBIF 5)",1,0.003521,0.35
+Flora species score,,Cichorium pumilum Jacq.,5392270,https://www.gbif.org/species/5392270,"Cichorieae (undiff.) (Florenzano, GBIF 5)",1,0.003521,0.35
+Flora species score,,Cirsium arvense (L.) Scop.,3113414,https://www.gbif.org/species/3113414,"Cirsium palustre type (Punt, GBIF 341)",1,0.003521,0.35
+Flora species score,,Cirsium vulgare (Savi) Ten.,3112801,https://www.gbif.org/species/3112801,"Cirsium palustre type (Punt, GBIF 341)",1,0.003521,0.35
+Flora species score,,Cistus creticus L.,6438085,https://www.gbif.org/species/6438085,"Cistus L. (Genus, GBIF 2874026)",1,0.003521,0.35
+Flora species score,,Cistus monspeliensis L.,2874030,https://www.gbif.org/species/2874030,"Cistus L. (Genus, GBIF 2874026)",1,0.003521,0.35
+Flora species score,,Cistus salviifolius L.,2874027,https://www.gbif.org/species/2874027,"Cistus L. (Genus, GBIF 2874026)",1,0.003521,0.35
+Flora species score,,Clematis vitalba L.,3033558,https://www.gbif.org/species/3033558,"Ranunculus acris type  >  Clematis vitalba group (Punt, GBIF 200)",1,0.003521,0.35
+Flora species score,,Clinopodium nepeta (L.) Kuntze,8916040,https://www.gbif.org/species/8916040,"Mentha type (Moore, GBIF 5)",1,0.003521,0.35
+Flora species score,,Conium maculatum L.,3034807,https://www.gbif.org/species/3034807,"Apiaceae (Family, GBIF 6720)",1,0.003521,0.35
+Flora species score,,Convolvulus althaeoides L.,2928400,https://www.gbif.org/species/2928400,"Convolvulus L. (Genus, GBIF 2928386)",1,0.003521,0.35
+Flora species score,,Convolvulus arvensis L.,2928390,https://www.gbif.org/species/2928390,"Convolvulus L. (Genus, GBIF 2928386)",1,0.003521,0.35
+Flora species score,,Convolvulus cantabrica L.,3681277,https://www.gbif.org/species/3681277,"Convolvulus L. (Genus, GBIF 2928386)",1,0.003521,0.35
+Flora species score,,Convolvulus cneorum L.,8069501,https://www.gbif.org/species/8069501,"Convolvulus L. (Genus, GBIF 2928386)",1,0.003521,0.35
+Flora species score,,Convolvulus sabatius Viv.,3678857,https://www.gbif.org/species/3678857,"Convolvulus L. (Genus, GBIF 2928386)",1,0.003521,0.35
+Flora species score,,Cornus mas L.,3082263,https://www.gbif.org/species/3082263,"Cornus mas type (Punt, GBIF 248)",1,0.003521,0.35
+Flora species score,,Corylus avellana L.,2875979,https://www.gbif.org/species/2875979,"Corylus avellana L. (Species, GBIF 2875979)",1,0.003521,0.35
+Flora species score,,Crepis albida Vill.,7770027,https://www.gbif.org/species/7770027,"Cichorieae (undiff.) (Florenzano, GBIF 5)",1,0.003521,0.35
+Flora species score,,Crepis bursifolia L.,5403541,https://www.gbif.org/species/5403541,"Cichorieae (undiff.) (Florenzano, GBIF 5)",1,0.003521,0.35
+Flora species score,,Crepis sancta (L.) Bornm.,5403605,https://www.gbif.org/species/5403605,"Cichorieae (undiff.) (Florenzano, GBIF 5)",1,0.003521,0.35
+Flora species score,,Crepis setosa Haller fil.,4245384,https://www.gbif.org/species/4245384,"Cichorieae (undiff.) (Florenzano, GBIF 5)",1,0.003521,0.35
+Flora species score,,Crithmum maritimum L.,3632234,https://www.gbif.org/species/3632234,"Apiaceae (Family, GBIF 6720)",1,0.003521,0.35
+Flora species score,,Cupressus sempervirens L.,2684030,https://www.gbif.org/species/2684030,"Juniperus type (Moore, GBIF 90)",1,0.003521,0.35
+Flora species score,,Cyclospermum leptophyllum (Pers.) Sprague,8350395,https://www.gbif.org/species/8350395,"Apiaceae (Family, GBIF 6720)",1,0.003521,0.35
+Flora species score,,Cynoglossum creticum Mill.,4064467,https://www.gbif.org/species/4064467,"Boraginaceae (Family, GBIF 2498)",1,0.003521,0.35
+Flora species score,,Daucus broteroi Ten.,7704950,https://www.gbif.org/species/7704950,"Apiaceae (Family, GBIF 6720)",1,0.003521,0.35
+Flora species score,,Daucus carota L.,3034742,https://www.gbif.org/species/3034742,"Apiaceae (Family, GBIF 6720)",1,0.003521,0.35
+Flora species score,,Dianthus armeria L.,3085413,https://www.gbif.org/species/3085413,"Caryophyllaceae (Family, GBIF 2518)",1,0.003521,0.35
+Flora species score,,Dianthus carthusianorum L.,8400876,https://www.gbif.org/species/8400876,"Caryophyllaceae (Family, GBIF 2518)",1,0.003521,0.35
+Flora species score,,Dianthus hyssopifolius L.,7267549,https://www.gbif.org/species/7267549,"Caryophyllaceae (Family, GBIF 2518)",1,0.003521,0.35
+Flora species score,,Dianthus virgineus L.,7487287,https://www.gbif.org/species/7487287,"Caryophyllaceae (Family, GBIF 2518)",1,0.003521,0.35
+Flora species score,,Diplotaxis erucoides (L.) DC.,5376309,https://www.gbif.org/species/5376309,"Sinapis type (Moore, GBIF 21)",1,0.003521,0.35
+Flora species score,,Diplotaxis tenuifolia (L.) DC.,5376426,https://www.gbif.org/species/5376426,"Sinapis type (Moore, GBIF 21)",1,0.003521,0.35
+Flora species score,,Echinophora spinosa L.,5538709,https://www.gbif.org/species/5538709,"Apiaceae (Family, GBIF 6720)",1,0.003521,0.35
+Flora species score,,Echinophora tenuifolia L.,5538701,https://www.gbif.org/species/5538701,"Apiaceae (Family, GBIF 6720)",1,0.003521,0.35
+Flora species score,,Echium italicum L.,2925889,https://www.gbif.org/species/2925889,"Boraginaceae (Family, GBIF 2498)",1,0.003521,0.35
+Flora species score,,Echium plantagineum L.,2925895,https://www.gbif.org/species/2925895,"Boraginaceae (Family, GBIF 2498)",1,0.003521,0.35
+Flora species score,,Echium sabulicola Pomel,7295578,https://www.gbif.org/species/7295578,"Boraginaceae (Family, GBIF 2498)",1,0.003521,0.35
+Flora species score,,Erigeron bonariensis L.,3146717,https://www.gbif.org/species/3146717,"Aster type (Moore, GBIF 31)",1,0.003521,0.35
+Flora species score,,Erigeron karvinskianus DC.,3147168,https://www.gbif.org/species/3147168,"Aster type (Moore, GBIF 31)",1,0.003521,0.35
+Flora species score,,Erigeron sumatrensis Retz.,3146683,https://www.gbif.org/species/3146683,"Aster type (Moore, GBIF 31)",1,0.003521,0.35
+Flora species score,,Eryngium campestre L.,3034426,https://www.gbif.org/species/3034426,"Apiaceae (Family, GBIF 6720)",1,0.003521,0.35
+Flora species score,,Eryngium maritimum L.,3034391,https://www.gbif.org/species/3034391,"Apiaceae (Family, GBIF 6720)",1,0.003521,0.35
+Flora species score,,Euphorbia amygdaloides L.,3065239,https://www.gbif.org/species/3065239,"Euphorbia L. (Genus, GBIF 11397237)",1,0.003521,0.35
+Flora species score,,Euphorbia characias L.,3067353,https://www.gbif.org/species/3067353,"Euphorbia L. (Genus, GBIF 11397237)",1,0.003521,0.35
+Flora species score,,Euphorbia cyparissias L.,3070106,https://www.gbif.org/species/3070106,"Euphorbia L. (Genus, GBIF 11397237)",1,0.003521,0.35
+Flora species score,,Euphorbia helioscopia L.,3066367,https://www.gbif.org/species/3066367,"Euphorbia L. (Genus, GBIF 11397237)",1,0.003521,0.35
+Flora species score,,Euphorbia lathyris L.,3066965,https://www.gbif.org/species/3066965,"Euphorbia L. (Genus, GBIF 11397237)",1,0.003521,0.35
+Flora species score,,Euphorbia maculata L.,3067119,https://www.gbif.org/species/3067119,"Euphorbia L. (Genus, GBIF 11397237)",1,0.003521,0.35
+Flora species score,,Euphorbia peplis L.,3066482,https://www.gbif.org/species/3066482,"Euphorbia L. (Genus, GBIF 11397237)",1,0.003521,0.35
+Flora species score,,Euphorbia peplus L.,3066386,https://www.gbif.org/species/3066386,"Euphorbia L. (Genus, GBIF 11397237)",1,0.003521,0.35
+Flora species score,,Euphorbia prostrata Aiton,3067891,https://www.gbif.org/species/3067891,"Euphorbia L. (Genus, GBIF 11397237)",1,0.003521,0.35
+Flora species score,,Euphorbia segetalis L.,3066495,https://www.gbif.org/species/3066495,"Euphorbia L. (Genus, GBIF 11397237)",1,0.003521,0.35
+Flora species score,,Ferula communis L.,8048981,https://www.gbif.org/species/8048981,"Apiaceae (Family, GBIF 6720)",1,0.003521,0.35
+Flora species score,,Foeniculum vulgare Mill.,3034922,https://www.gbif.org/species/3034922,"Apiaceae (Family, GBIF 6720)",1,0.003521,0.35
+Flora species score,,Fraxinus angustifolia Vahl,7325877,https://www.gbif.org/species/7325877,"Fraxinus excelsior type (Punt, GBIF 236)",1,0.003521,0.35
+Flora species score,,Fraxinus excelsior L.,3172358,https://www.gbif.org/species/3172358,"Fraxinus excelsior type (Punt, GBIF 236)",1,0.003521,0.35
+Flora species score,,Fraxinus ornus L.,3172347,https://www.gbif.org/species/3172347,"Fraxinus ornus L. (Species, GBIF 3172347)",1,0.003521,0.35
+Flora species score,,Fumaria bastardii Boreau,9228111,https://www.gbif.org/species/9228111,"Fumaria L. (Genus, GBIF 2888567)",1,0.003521,0.35
+Flora species score,,Fumaria capreolata L.,5334218,https://www.gbif.org/species/5334218,"Fumaria L. (Genus, GBIF 2888567)",1,0.003521,0.35
+Flora species score,,Galium aparine L.,2913548,https://www.gbif.org/species/2913548,"Galium type (Moore, GBIF 55)",1,0.003521,0.35
+Flora species score,,Galium verrucosum Huds.,2914754,https://www.gbif.org/species/2914754,"Galium type (Moore, GBIF 55)",1,0.003521,0.35
+Flora species score,,Galium verum L.,9063248,https://www.gbif.org/species/9063248,"Galium type (Moore, GBIF 55)",1,0.003521,0.35
+Flora species score,,Glebionis segetum (L.) Fourr.,3141101,https://www.gbif.org/species/3141101,"Anthemis arvensis type (Punt, GBIF 325)",1,0.003521,0.35
+Flora species score,,Hedera helix L.,8351737,https://www.gbif.org/species/8351737,"Hedera helix L. (Species, GBIF 8351737)",1,0.003521,0.35
+Flora species score,,Helminthotheca echioides (L) Holub,3141855,https://www.gbif.org/species/3141855,"Cichorium intybus type (Punt, GBIF 148)",1,0.003521,0.35
+Flora species score,,Helosciadium inundatum (L.) W.D.J.Koch,3631418,https://www.gbif.org/species/3631418,"Apiaceae (Family, GBIF 6720)",1,0.003521,0.35
+Flora species score,,Hypericum perforatum L.,3189486,https://www.gbif.org/species/3189486,"Hypericum perforatum type (Punt, GBIF 47)",1,0.003521,0.35
+Flora species score,,Hypochaeris glabra L.,3093911,https://www.gbif.org/species/3093911,"Cichorieae (undiff.) (Florenzano, GBIF 5)",1,0.003521,0.35
+Flora species score,,Juglans nigra L.,3054357,https://www.gbif.org/species/3054357,"Juglans L. (Genus, GBIF 3054350)",1,0.003521,0.35
+Flora species score,,Juglans regia L.,3054368,https://www.gbif.org/species/3054368,"Juglans L. (Genus, GBIF 3054350)",1,0.003521,0.35
+Flora species score,,Juniperus communis L.,2684709,https://www.gbif.org/species/2684709,"Juniperus type (Moore, GBIF 90)",1,0.003521,0.35
+Flora species score,,Juniperus oxycedrus L.,2684451,https://www.gbif.org/species/2684451,"Juniperus type (Moore, GBIF 90)",1,0.003521,0.35
+Flora species score,,Lamium amplexicaule L.,2926679,https://www.gbif.org/species/2926679,"Lamium L. (Genus, GBIF 2926678)",1,0.003521,0.35
+Flora species score,,Lamium bifidum Cirillo,7308131,https://www.gbif.org/species/7308131,"Lamium L. (Genus, GBIF 2926678)",1,0.003521,0.35
+Flora species score,,Lamium maculatum (L.) L.,2926684,https://www.gbif.org/species/2926684,"Lamium L. (Genus, GBIF 2926678)",1,0.003521,0.35
+Flora species score,,Lamium purpureum L.,2926682,https://www.gbif.org/species/2926682,"Lamium L. (Genus, GBIF 2926678)",1,0.003521,0.35
+Flora species score,,"Leontodon tuberosus Batt., 1889",4252823,https://www.gbif.org/species/4252823,"Cichorieae (undiff.) (Florenzano, GBIF 5)",1,0.003521,0.35
+Flora species score,,Lonicera etrusca Santi,5334247,https://www.gbif.org/species/5334247,"Lonicera L. (Genus, GBIF 2888645)",1,0.003521,0.35
+Flora species score,,Lonicera implexa Aiton,7272699,https://www.gbif.org/species/7272699,"Lonicera L. (Genus, GBIF 2888645)",1,0.003521,0.35
+Flora species score,,Lonicera japonica Thunb.,5334240,https://www.gbif.org/species/5334240,"Lonicera L. (Genus, GBIF 2888645)",1,0.003521,0.35
+Flora species score,,Lotus conimbricensis Brot.,5356971,https://www.gbif.org/species/5356971,"Lotus L. (Genus, GBIF 10220564)",1,0.003521,0.35
+Flora species score,,Lotus corniculatus L.,5357013,https://www.gbif.org/species/5357013,"Lotus L. (Genus, GBIF 10220564)",1,0.003521,0.35
+Flora species score,,Lotus hirsutus L.,5354799,https://www.gbif.org/species/5354799,"Lotus L. (Genus, GBIF 10220564)",1,0.003521,0.35
+Flora species score,,Lotus ornithopodioides L.,5357035,https://www.gbif.org/species/5357035,"Lotus L. (Genus, GBIF 10220564)",1,0.003521,0.35
+Flora species score,,Lotus pedunculatus Cav.,5356854,https://www.gbif.org/species/5356854,"Lotus L. (Genus, GBIF 10220564)",1,0.003521,0.35
+Flora species score,,Lunaria annua L.,5373324,https://www.gbif.org/species/5373324,"Sinapis type (Moore, GBIF 21)",1,0.003521,0.35
+Flora species score,,Matricaria chamomilla L.,8370958,https://www.gbif.org/species/8370958,"Anthemis arvensis type (Punt, GBIF 325)",1,0.003521,0.35
+Flora species score,,Matricaria discoidea DC.,3103791,https://www.gbif.org/species/3103791,"Anthemis arvensis type (Punt, GBIF 325)",1,0.003521,0.35
+Flora species score,,Mentha suaveolens Ehrh.,2927190,https://www.gbif.org/species/2927190,"Mentha type (Moore, GBIF 5)",1,0.003521,0.35
+Flora species score,,Myosotis ramosissima Rochel,7589756,https://www.gbif.org/species/7589756,"Boraginaceae (Family, GBIF 2498)",1,0.003521,0.35
+Flora species score,,Myosotis sylvatica Ehrh. ex Hoffm.,5341175,https://www.gbif.org/species/5341175,"Boraginaceae (Family, GBIF 2498)",1,0.003521,0.35
+Flora species score,,Myrrhis odorata (L.) Scop.,3034681,https://www.gbif.org/species/3034681,"Apiaceae (Family, GBIF 6720)",1,0.003521,0.35
+Flora species score,,Oenanthe fistulosa L.,5371890,https://www.gbif.org/species/5371890,"Apiaceae (Family, GBIF 6720)",1,0.003521,0.35
+Flora species score,,Olea europaea L.,5415040,https://www.gbif.org/species/5415040,"Olea L. (Genus, GBIF 3172244)",1,0.003521,0.35
+Flora species score,,Origanum majorana L.,2926615,https://www.gbif.org/species/2926615,"Mentha type (Moore, GBIF 5)",1,0.003521,0.35
+Flora species score,,Ostrya carpinifolia Scop.,5332305,https://www.gbif.org/species/5332305,"Ostrya-Typ (Beug, GBIF 369)",1,0.003521,0.35
+Flora species score,,Parietaria judaica L.,5361801,https://www.gbif.org/species/5361801,"Urtica dioica type (Punt, GBIF 145)",1,0.003521,0.35
+Flora species score,,Parietaria officinalis L.,5361803,https://www.gbif.org/species/5361803,"Urtica dioica type (Punt, GBIF 145)",1,0.003521,0.35
+Flora species score,,"Petasites hybridus (L.) G.Gaertn., B.Mey. & Scherb.",9490132,https://www.gbif.org/species/9490132,"Aster type (Moore, GBIF 31)",1,0.003521,0.35
+Flora species score,,Petrorhagia dubia (Raf.) G.López & Romo,3085625,https://www.gbif.org/species/3085625,"Caryophyllaceae (Family, GBIF 2518)",1,0.003521,0.35
+Flora species score,,Petroselinum crispum (Mill.) Fuss,7828157,https://www.gbif.org/species/7828157,"Apiaceae (Family, GBIF 6720)",1,0.003521,0.35
+Flora species score,,"Picris hieracioides Sibth. & Sm., 1813",7986596,https://www.gbif.org/species/7986596,"Cichorieae (undiff.) (Florenzano, GBIF 5)",1,0.003521,0.35
+Flora species score,,Pinus halepensis Mill.,5285604,https://www.gbif.org/species/5285604,"Pinus L. (Genus, GBIF 2684241)",1,0.003521,0.35
+Flora species score,,Pinus pinaster Aiton,5285565,https://www.gbif.org/species/5285565,"Pinus L. (Genus, GBIF 2684241)",1,0.003521,0.35
+Flora species score,,Pinus pinea L.,5285165,https://www.gbif.org/species/5285165,"Pinus L. (Genus, GBIF 2684241)",1,0.003521,0.35
+Flora species score,,Plantago argentea Chaix,7553757,https://www.gbif.org/species/7553757,"Plantago L. (Genus, GBIF 3189695)",1,0.003521,0.35
+Flora species score,,Plantago coronopus L.,3189739,https://www.gbif.org/species/3189739,"Plantago L. (Genus, GBIF 3189695)",1,0.003521,0.35
+Flora species score,,Plantago lagopus L.,8022932,https://www.gbif.org/species/8022932,"Plantago L. (Genus, GBIF 3189695)",1,0.003521,0.35
+Flora species score,,Plantago media L.,3189747,https://www.gbif.org/species/3189747,"Plantago L. (Genus, GBIF 3189695)",1,0.003521,0.35
+Flora species score,,Plantago serraria L.,4155863,https://www.gbif.org/species/4155863,"Plantago L. (Genus, GBIF 3189695)",1,0.003521,0.35
+Flora species score,,Plantago weldenii Rchb.,7302991,https://www.gbif.org/species/7302991,"Plantago L. (Genus, GBIF 3189695)",1,0.003521,0.35
+Flora species score,,Polycarpon tetraphyllum (L.) L.,3085381,https://www.gbif.org/species/3085381,"Caryophyllaceae (Family, GBIF 2518)",1,0.003521,0.35
+Flora species score,,Polygonum aviculare L.,7821030,https://www.gbif.org/species/7821030,"Polygonum L. (Genus, GBIF 2889077)",1,0.003521,0.35
+Flora species score,,Populus × canadensis Moench,8190077,https://www.gbif.org/species/8190077,"Populus L. (Genus, GBIF 3040183)",1,0.003521,0.35
+Flora species score,,Populus × canescens (Aiton) Sm.,3040185,https://www.gbif.org/species/3040185,"Populus L. (Genus, GBIF 3040183)",1,0.003521,0.35
+Flora species score,,Populus alba L.,3040233,https://www.gbif.org/species/3040233,"Populus L. (Genus, GBIF 3040183)",1,0.003521,0.35
+Flora species score,,Populus nigra L.,3040227,https://www.gbif.org/species/3040227,"Populus L. (Genus, GBIF 3040183)",1,0.003521,0.35
+Flora species score,,Pulmonaria saccharata Mill.,5341203,https://www.gbif.org/species/5341203,"Boraginaceae (Family, GBIF 2498)",1,0.003521,0.35
+Flora species score,,Quercus cerris L.,2880580,https://www.gbif.org/species/2880580,"Quercus  >  Quercus cerris-Typ (Beug, GBIF 42)",1,0.003521,0.35
+Flora species score,,Quercus ilex L.,2879098,https://www.gbif.org/species/2879098,"Quercus ilex L. (Species, GBIF 2879098)",1,0.003521,0.35
+Flora species score,,Quercus petraea (Matt.) Liebl.,2880130,https://www.gbif.org/species/2880130,"Quercus  >  Quercus robur-pubescens-Typ (Beug, GBIF 41)",1,0.003521,0.35
+Flora species score,,Quercus pubescens Willd.,2881283,https://www.gbif.org/species/2881283,"Quercus  >  Quercus robur-pubescens-Typ (Beug, GBIF 41)",1,0.003521,0.35
+Flora species score,,Quercus robur L.,2878688,https://www.gbif.org/species/2878688,"Quercus  >  Quercus robur-pubescens-Typ (Beug, GBIF 41)",1,0.003521,0.35
+Flora species score,,Quercus rubra L.,2880539,https://www.gbif.org/species/2880539,"Quercus  >  Quercus robur-pubescens-Typ (Beug, GBIF 41)",1,0.003521,0.35
+Flora species score,,Quercus suber L.,2879411,https://www.gbif.org/species/2879411,"Quercus  >  Quercus cerris-Typ (Beug, GBIF 42)",1,0.003521,0.35
+Flora species score,,Ranunculus bulbosus L.,3033329,https://www.gbif.org/species/3033329,"Ranunculus acris type  >  Ranunculus acris group (Punt, GBIF 203)",1,0.003521,0.35
+Flora species score,,Ranunculus lanuginosus L.,7826351,https://www.gbif.org/species/7826351,"Ranunculus acris type  >  Ranunculus acris group (Punt, GBIF 203)",1,0.003521,0.35
+Flora species score,,Ranunculus muricatus L.,3033318,https://www.gbif.org/species/3033318,"Ranunculus acris type  >  Ranunculus acris group (Punt, GBIF 203)",1,0.003521,0.35
+Flora species score,,Ranunculus peltatus Schrank,8365713,https://www.gbif.org/species/8365713,"Ranunculus acris type  >  Ranunculus aquatilis group (Punt, GBIF 204)",1,0.003521,0.35
+Flora species score,,Ranunculus repens L.,3033339,https://www.gbif.org/species/3033339,"Ranunculus acris type  >  Ranunculus acris group (Punt, GBIF 203)",1,0.003521,0.35
+Flora species score,,Raphanus raphanistrum L.,3040983,https://www.gbif.org/species/3040983,"Sinapis type (Moore, GBIF 21)",1,0.003521,0.35
+Flora species score,,Reichardia picroides (L.) Roth,5385655,https://www.gbif.org/species/5385655,"Cichorieae (undiff.) (Florenzano, GBIF 5)",1,0.003521,0.35
+Flora species score,,Rhamnus alaternus L.,6371424,https://www.gbif.org/species/6371424,"Rhamnus L. (Genus, GBIF 3039471)",1,0.003521,0.35
+Flora species score,,Rhamnus saxatilis Jacq.,6371028,https://www.gbif.org/species/6371028,"Rhamnus L. (Genus, GBIF 3039471)",1,0.003521,0.35
+Flora species score,,Rubia peregrina L.,2892347,https://www.gbif.org/species/2892347,"Galium type (Moore, GBIF 55)",1,0.003521,0.35
+Flora species score,,Salix alba L.,5372513,https://www.gbif.org/species/5372513,"Salix L. (Genus, GBIF 3039576)",1,0.003521,0.35
+Flora species score,,Salsola squarrosa Steven ex Moq.,3756197,https://www.gbif.org/species/3756197,"Amaranthaceae (Family, GBIF 3064)",1,0.003521,0.35
+Flora species score,,Salsola tragus L.,3083945,https://www.gbif.org/species/3083945,"Amaranthaceae (Family, GBIF 3064)",1,0.003521,0.35
+Flora species score,,Saponaria officinalis L.,3085360,https://www.gbif.org/species/3085360,"Caryophyllaceae (Family, GBIF 2518)",1,0.003521,0.35
+Flora species score,,Scandix pecten-veneris L.,3034233,https://www.gbif.org/species/3034233,"Apiaceae (Family, GBIF 6720)",1,0.003521,0.35
+Flora species score,,Scolymus hispanicus L.,5403742,https://www.gbif.org/species/5403742,"Cichorieae (undiff.) (Florenzano, GBIF 5)",1,0.003521,0.35
+Flora species score,,Scorzoneroides autumnalis (L.) Moench,3133512,https://www.gbif.org/species/3133512,"Cichorium intybus type (Punt, GBIF 148)",1,0.003521,0.35
+Flora species score,,Senecio angulatus L.fil.,4933568,https://www.gbif.org/species/4933568,"Aster type (Moore, GBIF 31)",1,0.003521,0.35
+Flora species score,,Senecio leucanthemifolius Poir.,7624085,https://www.gbif.org/species/7624085,"Aster type (Moore, GBIF 31)",1,0.003521,0.35
+Flora species score,,Seseli tortuosum L.,7904530,https://www.gbif.org/species/7904530,"Apiaceae (Family, GBIF 6720)",1,0.003521,0.35
+Flora species score,,Sherardia arvensis L.,5339050,https://www.gbif.org/species/5339050,"Galium type (Moore, GBIF 55)",1,0.003521,0.35
+Flora species score,,Silene colorata Poir.,7566895,https://www.gbif.org/species/7566895,"Caryophyllaceae (Family, GBIF 2518)",1,0.003521,0.35
+Flora species score,,Silene dichotoma Ehrh.,5384818,https://www.gbif.org/species/5384818,"Caryophyllaceae (Family, GBIF 2518)",1,0.003521,0.35
+Flora species score,,Silene dioica (L.) Clairv.,5384795,https://www.gbif.org/species/5384795,"Caryophyllaceae (Family, GBIF 2518)",1,0.003521,0.35
+Flora species score,,Silene flos-cuculi (L.) Greuter & Burdet,5384738,https://www.gbif.org/species/5384738,"Caryophyllaceae (Family, GBIF 2518)",1,0.003521,0.35
+Flora species score,,Silene gallica L.,5384848,https://www.gbif.org/species/5384848,"Caryophyllaceae (Family, GBIF 2518)",1,0.003521,0.35
+Flora species score,,Silene latifolia Poir.,5384805,https://www.gbif.org/species/5384805,"Caryophyllaceae (Family, GBIF 2518)",1,0.003521,0.35
+Flora species score,,Silene vulgaris (Moench) Garcke,9172281,https://www.gbif.org/species/9172281,"Caryophyllaceae (Family, GBIF 2518)",1,0.003521,0.35
+Flora species score,,Sinapis alba L.,3047621,https://www.gbif.org/species/3047621,"Sinapis type (Moore, GBIF 21)",1,0.003521,0.35
+Flora species score,,Sisymbrium officinale (L.) Scop.,3046890,https://www.gbif.org/species/3046890,"Sinapis type (Moore, GBIF 21)",1,0.003521,0.35
+Flora species score,,Soda inermis (Moench) Fourr.,3758349,https://www.gbif.org/species/3758349,"Amaranthaceae (Family, GBIF 3064)",1,0.003521,0.35
+Flora species score,,Sonchus tenerrimus L.,3105768,https://www.gbif.org/species/3105768,"Cichorieae (undiff.) (Florenzano, GBIF 5)",1,0.003521,0.35
+Flora species score,,Spergularia rubra (L.) J.Presl & C.Presl,3085633,https://www.gbif.org/species/3085633,"Caryophyllaceae (Family, GBIF 2518)",1,0.003521,0.35
+Flora species score,,Stellaria media (L.) Vill.,5384604,https://www.gbif.org/species/5384604,"Caryophyllaceae (Family, GBIF 2518)",1,0.003521,0.35
+Flora species score,,Thymus vulgaris L.,5341442,https://www.gbif.org/species/5341442,"Mentha type (Moore, GBIF 5)",1,0.003521,0.35
+Flora species score,,Tilia × europaea L.,3152046,https://www.gbif.org/species/3152046,"Tilia platyphyllos type (Punt, GBIF 218)",1,0.003521,0.35
+Flora species score,,Tordylium apulum L.,3034902,https://www.gbif.org/species/3034902,"Apiaceae (Family, GBIF 6720)",1,0.003521,0.35
+Flora species score,,Torilis nodosa (L.) Gaertn.,3034819,https://www.gbif.org/species/3034819,"Apiaceae (Family, GBIF 6720)",1,0.003521,0.35
+Flora species score,,Tragopogon dubius Scop.,6443709,https://www.gbif.org/species/6443709,"Cichorieae (undiff.) (Florenzano, GBIF 5)",1,0.003521,0.35
+Flora species score,,Tragopogon porrifolius L.,5386938,https://www.gbif.org/species/5386938,"Cichorieae (undiff.) (Florenzano, GBIF 5)",1,0.003521,0.35
+Flora species score,,Trifolium arvense L.,5359246,https://www.gbif.org/species/5359246,"Fabaceae p.p.  >  Trifolium  >  Trifolium repens-Typ (Beug, GBIF 19)",1,0.003521,0.35
+Flora species score,,Trifolium campestre Schreb.,5359477,https://www.gbif.org/species/5359477,"Fabaceae p.p.  >  Trifolium  >  Trifolium repens-Typ (Beug, GBIF 19)",1,0.003521,0.35
+Flora species score,,Trifolium dubium Sibth.,5359429,https://www.gbif.org/species/5359429,"Fabaceae p.p.  >  Trifolium  >  Trifolium repens-Typ (Beug, GBIF 19)",1,0.003521,0.35
+Flora species score,,Trifolium fragiferum L.,5358935,https://www.gbif.org/species/5358935,"Fabaceae p.p.  >  Trifolium  >  Trifolium repens-Typ (Beug, GBIF 19)",1,0.003521,0.35
+Flora species score,,Trifolium repens L.,5358748,https://www.gbif.org/species/5358748,"Fabaceae p.p.  >  Trifolium  >  Trifolium repens-Typ (Beug, GBIF 19)",1,0.003521,0.35
+Flora species score,,Trifolium resupinatum L.,5359175,https://www.gbif.org/species/5359175,"Fabaceae p.p.  >  Trifolium  >  Trifolium repens-Typ (Beug, GBIF 19)",1,0.003521,0.35
+Flora species score,,Trifolium striatum L.,5358683,https://www.gbif.org/species/5358683,"Fabaceae p.p.  >  Trifolium  >  Trifolium repens-Typ (Beug, GBIF 19)",1,0.003521,0.35
+Flora species score,,Tussilago farfara L.,3149879,https://www.gbif.org/species/3149879,"Aster type (Moore, GBIF 31)",1,0.003521,0.35
+Flora species score,,Ulmus glabra Huds.,5361866,https://www.gbif.org/species/5361866,"Ulmus L. (Genus, GBIF 2984510)",1,0.003521,0.35
+Flora species score,,Ulmus minor Mill.,5361865,https://www.gbif.org/species/5361865,"Ulmus L. (Genus, GBIF 2984510)",1,0.003521,0.35
+Flora species score,,Urospermum dalechampii (L.) Scop. ex F.W.Schmidt,3096622,https://www.gbif.org/species/3096622,"Cichorieae (undiff.) (Florenzano, GBIF 5)",1,0.003521,0.35
+Flora species score,,Urospermum picroides (L.) Scop. ex F.W.Schmidt,3096624,https://www.gbif.org/species/3096624,"Cichorieae (undiff.) (Florenzano, GBIF 5)",1,0.003521,0.35
+Flora species score,,Urtica dioica L.,7960979,https://www.gbif.org/species/7960979,"Urtica dioica type (Punt, GBIF 145)",1,0.003521,0.35
+Flora species score,,Urtica urens L.,5361815,https://www.gbif.org/species/5361815,"Urtica dioica type (Punt, GBIF 145)",1,0.003521,0.35
+Flora species score,,Valeriana officinalis L.,2888763,https://www.gbif.org/species/2888763,"Valeriana L. (Genus, GBIF 2888741)",1,0.003521,0.35
+Flora species score,,Visnaga daucoides Gaertn.,5371753,https://www.gbif.org/species/5371753,"Apiaceae (Family, GBIF 6720)",1,0.003521,0.35
+Flora species score,,Xanthium orientale L.,3089146,https://www.gbif.org/species/3089146,"Xanthium strumarium type  >  Xanthium strumarium group (Punt, GBIF 284)",1,0.003521,0.35
+Flora species score,,Xanthium strumarium L.,3089154,https://www.gbif.org/species/3089154,"Xanthium strumarium type  >  Xanthium strumarium group (Punt, GBIF 284)",1,0.003521,0.35
+Flora species score total,,Total matched pairs used for scoring,,,,284,1.000000,100.00
+Unmatched pollen taxon,Species,Aristolochia clematitis L.,2873991,https://www.gbif.org/species/2873991,,0,0.000000,0.00
+Unmatched pollen taxon,Species,Cladium mariscus (L.) Pohl,2731327,https://www.gbif.org/species/2731327,,0,0.000000,0.00
+Unmatched pollen taxon,Species,Hydrocharis morsus-ranae L.,5329266,https://www.gbif.org/species/5329266,,0,0.000000,0.00
+Unmatched pollen taxon,Species,Lythrum salicaria L.,3188736,https://www.gbif.org/species/3188736,,0,0.000000,0.00
+Unmatched pollen taxon,Species,Myriophyllum spicatum L.,5361760,https://www.gbif.org/species/5361760,,0,0.000000,0.00
+Unmatched pollen taxon,Species,Myriophyllum alterniflorum DC.,5361773,https://www.gbif.org/species/5361773,,0,0.000000,0.00
+Unmatched pollen taxon,Species,Myriophyllum verticillatum L.,5361779,https://www.gbif.org/species/5361779,,0,0.000000,0.00
+Unmatched pollen taxon,Species,"Roemeria argemone (L.) C.Morales, R.Mend. & Romero García",5531435,https://www.gbif.org/species/5531435,,0,0.000000,0.00
+Unmatched pollen taxon,Species,Phragmites australis (Cav.) Trin. ex Steud.,5290149,https://www.gbif.org/species/5290149,,0,0.000000,0.00
+Unmatched pollen taxon,Genus,Abies Mill.,2684876,https://www.gbif.org/species/2684876,,0,0.000000,0.00
+Unmatched pollen taxon,Genus,Asphodelus L.,7502499,https://www.gbif.org/species/7502499,,0,0.000000,0.00
+Unmatched pollen taxon,Genus,Cannabis L.,2984538,https://www.gbif.org/species/2984538,,0,0.000000,0.00
+Unmatched pollen taxon,Genus,Carex L.,2721893,https://www.gbif.org/species/2721893,,0,0.000000,0.00
+Unmatched pollen taxon,Genus,Cyperus L.,2713455,https://www.gbif.org/species/2713455,,0,0.000000,0.00
+Unmatched pollen taxon,Genus,Filipendula Mill.,2987968,https://www.gbif.org/species/2987968,,0,0.000000,0.00
+Unmatched pollen taxon,Genus,Helianthemum Mill.,2874068,https://www.gbif.org/species/2874068,,0,0.000000,0.00
+Unmatched pollen taxon,Genus,Herniaria L.,3085796,https://www.gbif.org/species/3085796,,0,0.000000,0.00
+Unmatched pollen taxon,Genus,Hippophae L.,3039284,https://www.gbif.org/species/3039284,,0,0.000000,0.00
+Unmatched pollen taxon,Genus,Juncus L.,2701072,https://www.gbif.org/species/2701072,,0,0.000000,0.00
+Unmatched pollen taxon,Genus,Lemna L.,2867567,https://www.gbif.org/species/2867567,,0,0.000000,0.00
+Unmatched pollen taxon,Genus,Myriophyllum L.,2984253,https://www.gbif.org/species/2984253,,0,0.000000,0.00
+Unmatched pollen taxon,Genus,Panicum L.,2705064,https://www.gbif.org/species/2705064,,0,0.000000,0.00
+Unmatched pollen taxon,Genus,Ricinus L.,9188216,https://www.gbif.org/species/9188216,,0,0.000000,0.00
+Unmatched pollen taxon,Genus,Symphytum L.,2926061,https://www.gbif.org/species/2926061,,0,0.000000,0.00
+Unmatched pollen taxon,Genus,Valerianella Mill.,2888767,https://www.gbif.org/species/2888767,,0,0.000000,0.00
+Unmatched pollen taxon,Genus,Veratrum L.,2742049,https://www.gbif.org/species/2742049,,0,0.000000,0.00
+Unmatched pollen taxon,Family,Cyperaceae,7708,https://www.gbif.org/species/7708,,0,0.000000,0.00
+Unmatched pollen taxon,Beug,Ephedra > Ephedra dystachya-Typ,16,https://www.gbif.org/species/16,,0,0.000000,0.00
+Unmatched pollen taxon,Beug,Ornithogalum umbellatum-Typ,54,https://www.gbif.org/species/54,,0,0.000000,0.00
+Unmatched pollen taxon,Punt,Angelica palustris type,170,https://www.gbif.org/species/170,,0,0.000000,0.00
+Unmatched pollen taxon,Punt,Knautia arvensis type,118,https://www.gbif.org/species/118,,0,0.000000,0.00
+Unmatched pollen taxon,Punt,Ranunculus acris type  >  Pulsatilla vulgaris group,201,https://www.gbif.org/species/201,,0,0.000000,0.00
+Unmatched pollen taxon,Punt,Sparganium emersum type,33,https://www.gbif.org/species/33,,0,0.000000,0.00
+Unmatched pollen taxon,Punt,Sparganium erectum type,34,https://www.gbif.org/species/34,,0,0.000000,0.00
+Unmatched pollen taxon,Punt,Thalictrum flavum type,267,https://www.gbif.org/species/267,,0,0.000000,0.00
+Unmatched pollen taxon,Punt,Typha latifolia type,35,https://www.gbif.org/species/35,,0,0.000000,0.00
+Unmatched pollen taxon,Punt,Valerianella locusta type  >  Valerianella dentata group,69,https://www.gbif.org/species/69,,0,0.000000,0.00
+Unmatched pollen taxon,Moore,Allium type,22,https://www.gbif.org/species/22,,0,0.000000,0.00
+Unmatched pollen taxon,Moore,Nymphaea alba type,258,https://www.gbif.org/species/258,,0,0.000000,0.00
+Unmatched pollen taxon,Moore,Scilla type,175,https://www.gbif.org/species/175,,0,0.000000,0.00
+Unmatched pollen taxon,Andersen,Avena-Triticum group,3,https://www.gbif.org/species/3,,0,0.000000,0.00
+Unmatched pollen taxon,Andersen,Hordeum group,2,https://www.gbif.org/species/2,,0,0.000000,0.00
+Unmatched pollen taxon,Andersen,Wild grass group,1,https://www.gbif.org/species/1,,0,0.000000,0.00

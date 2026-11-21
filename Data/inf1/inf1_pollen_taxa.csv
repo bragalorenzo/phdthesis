@@ -1,0 +1,196 @@
+﻿Type,Name,GBIF ID,Level
+Species,Butomus umbellatus L.,2864467,-
+Species,Carpinus betulus L.,2875818,-
+Species,Castanea sativa Mill.,5333294,-
+Species,Cladium mariscus (L.) Pohl,2731327,-
+Species,Cornus mas L.,3082263,-
+Species,Corylus avellana L.,2875979,-
+Species,Descurainia sophia (L.) Webb ex Prantl,3044318,-
+Species,Fagus orientalis Lipsky,2882360,-
+Species,Fagus sylvatica L.,2882316,-
+Species,Fraxinus angustifolia Vahl,7325877,-
+Species,Fraxinus ornus L.,3172347,-
+Species,Hedera helix L.,8351737,-
+Species,Helleborus niger L.,3033107,-
+Species,Humulus lupulus L.,2984535,-
+Species,Hydrocharis morsus-ranae L.,5329266,-
+Species,Ilex aquifolium L.,5414222,-
+Species,Iris lutescens Lam.,5298190,-
+Species,Lythrum salicaria L.,3188736,-
+Species,Muscari botryoides (L.) Mill.,2772094,-
+Species,Myriophyllum alterniflorum DC.,5361773,-
+Species,Myriophyllum spicatum L.,5361760,-
+Species,Myriophyllum verticillatum L.,5361779,-
+Species,Narcissus pseudonarcissus L.,2858244,-
+Species,Nuphar lutea (L.) Sibth. & Sm.,7551339,-
+Species,Olea europaea L.,5415040,-
+Species,Phragmites australis (Cav.) Trin. ex Steud.,5290149,-
+Species,Plantago atrata Hoppe,8083357,-
+Species,Potamogeton lucens L.,5301141,-
+Species,Quercus ilex L.,2879098,-
+Species,Ranunculus paludosus Poir.,7966304,-
+Species,Rhynchospora alba (L.) Vahl,2721119,-
+Species,Rhynchospora fusca (L.) W.T.Aiton,8388555,-
+Species,"Roemeria argemone (L.) C.Morales, R.Mend. & Romero García",5531435,-
+Species,Sanguisorba officinalis L.,3029627,-
+Species,Saxifraga saxatilis Harry Sm.,7468016,-
+Species,Streptopus amplexifolius (L.) DC.,2752734,-
+Species,Urtica pilulifera L.,5670646,-
+Species,Valeriana saliunca All.,4096053,-
+Species,Viburnum lantana L.,2888615,-
+Genus,Abies Mill.,2684876,-
+Genus,Adonis L.,3033821,-
+Genus,Alisma L.,2865099,-
+Genus,Allium L.,9624496,-
+Genus,Androsace L.,3169318,-
+Genus,Artemisia L.,3120641,-
+Genus,Asparagus Tourn. ex L.,9527393,-
+Genus,Astragalus L.,2933951,-
+Genus,Beta L.,3083586,-
+Genus,Borago L.,2926109,-
+Genus,Buddleja L.,3173330,-
+Genus,Bupleurum L.,3034551,-
+Genus,Buxus L.,2984666,-
+Genus,Calystegia R.Br.,2928418,-
+Genus,Campanula L.,3161935,-
+Genus,Cannabis L.,2984538,-
+Genus,Carex L.,2721893,-
+Genus,Celtis L.,2984479,-
+Genus,Cerinthe L.,2926107,-
+Genus,Chaenorhinum (DC.) Rchb.,3171668,-
+Genus,Chenopodium L.,3083823,-
+Genus,Cistus L.,2874026,-
+Genus,Convolvulus L.,2928386,-
+Genus,Crataegus L.,3013395,-
+Genus,Cyperus L.,2713455,-
+Genus,Daucus L.,3034740,-
+Genus,Draba Dill. ex L.,3049396,-
+Genus,Echium L.,2925888,-
+Genus,Ephedra Tourn. ex L.,2653237,-
+Genus,Erica L.,2882780,-
+Genus,Eriophorum L.,2730118,-
+Genus,Euphorbia L.,11397237,-
+Genus,Filipendula Mill.,2987968,-
+Genus,Fumaria L.,2888567,-
+Genus,Gagea Salisb.,2751406,-
+Genus,Galega Tourn. ex L.,2975657,-
+Genus,Hedysarum L.,2960767,-
+Genus,Helianthemum Mill.,2874068,-
+Genus,Helleborus L.,2741682,-
+Genus,Herniaria L.,3085796,-
+Genus,Hippophae L.,3039284,-
+Genus,Iris Tourn. ex L.,2748017,-
+Genus,Juglans L.,3054350,-
+Genus,Juncus L.,2701072,-
+Genus,Lamium L.,2926678,-
+Genus,Lemna L.,2867567,-
+Genus,Ligustrum L.,3172289,-
+Genus,Linaria Mill.,3172168,-
+Genus,Lippia L.,2925383,-
+Genus,Lotus L.,10220564,-
+Genus,Lysimachia Tourn. ex L.,3169330,-
+Genus,Medicago L.,2965200,-
+Genus,Melilotus Mill.,4924408,-
+Genus,Myriophyllum L.,2984253,-
+Genus,Oenanthe L.,3034893,-
+Genus,Onobrychis Mill.,2972544,-
+Genus,Pancratium Dill. ex L.,2853236,-
+Genus,Panicum L.,2705064,-
+Genus,Papaver L.,2888431,-
+Genus,Paronychia Mill.,8020237,-
+Genus,Picea A.Dietr.,7606064,-
+Genus,Pinus L.,2684241,-
+Genus,Pistacia L.,3190459,-
+Genus,Plantago L.,3189695,-
+Genus,Polygala L.,3191366,-
+Genus,Populus L.,3040183,-
+Genus,Potamogeton L.,2756560,-
+Genus,Potentilla L.,8079058,-
+Genus,Prunus L.,3020559,-
+Genus,Rhamnus L.,3039471,-
+Genus,Rhinanthus L.,3172042,-
+Genus,Ribes L.,2986095,-
+Genus,Rosa L.,8395064,-
+Genus,Rumex L.,2888942,-
+Genus,Salix L.,3039576,-
+Genus,Salvia L.,2926981,-
+Genus,Sanguisorba L.,3029383,-
+Genus,Saxifraga L.,2987833,-
+Genus,Scilla L.,9555189,-
+Genus,Scirpus Tourn. ex L.,2720078,-
+Genus,Scrophularia L.,3170861,-
+Genus,Sedum L.,5361975,-
+Genus,Torilis Adans.,3034818,-
+Genus,Trifolium Tourn. ex L.,2973363,-
+Genus,Ulmus L.,2984510,-
+Genus,Veratrum L.,2742049,-
+Genus,Verbascum L.,2928970,-
+Genus,Alnus Mill.,2876099,-
+Family,Apiaceae,6720,-
+Family,Brassicaceae,3112,-
+Family,Caryophyllaceae,2518,-
+Family,Amaranthaceae,3064,-
+Family,Cyperaceae,7708,-
+Family,Fabaceae,5386,-
+Family,Lamiaceae,2497,-
+Beug,Asphodelus-Gruppe  >  Asphodelus albus-Typ,26,2
+Beug,Quercus  >  Quercus cerris-Typ,42,2
+Beug,Quercus  >  Quercus robur-pubescens-Typ,41,2
+Beug,Ornithogalum umbellatum-Typ,54,1
+Beug,Ostrya-Typ,369,1
+Beug,Sorbus-Gruppe,216,1
+Beug,Dipsacaceae p.p.  >  Scabiosa columbaria-Typ,104,2
+Beug,Fabaceae p.p.  >  Trifolium  >  Trifolium pratense-Typ,16,3
+Beug,Fabaceae p.p.  >  Trifolium  >  Trifolium repens-Typ,19,3
+Punt,Acer campestre type,101,1
+Punt,Aethusa cynapium type,167,1
+Punt,Angelica palustris type,170,1
+Punt,Anthemis arvensis type,325,1
+Punt,Apium inundatum type,174,1
+Punt,Aristolochia clematitis type,301,1
+Punt,Astrantia major type,175,1
+Punt,Betula pubescens type,309,1
+Punt,Carduus crispus type,336,1
+Punt,Centaurea nigra type,338,1
+Punt,Cirsium palustre type,341,1
+Punt,Cornus sanguinea type,249,1
+Punt,Crupina vulgaris type,343,1
+Punt,Fraxinus excelsior type,236,1
+Punt,Helleborus viridis type,261,1
+Punt,Hypericum perforatum type,47,1
+Punt,Nymphaea alba type,128,1
+Punt,Orlaya grandiflora type,201,1
+Punt,Peucedanum palustre type  >  Peucedanum palustre group,152,2
+Punt,Plantago lanceolata type,92,1
+Punt,Polygonum aviculare type,228,1
+Punt,Polygonum bistorta type,229,1
+Punt,Polygonum persicaria type,231,1
+Punt,Ranunculus acris type  >  Pulsatilla vulgaris group,201,2
+Punt,Ranunculus acris type  >  Ranunculus acris group,203,2
+Punt,Sambucus nigra type,8,1
+Punt,Scandix pecten-veneris type,208,1
+Punt,Senecio vulgaris type  >  Senecio vulgaris group,279,2
+Punt,Solanum nigrum type,57,1
+Punt,Sonchus oleraceus type,152,1
+Punt,Sparganium emersum type,33,1
+Punt,Sparganium erectum type,34,1
+Punt,Symphytum officinale type,80,1
+Punt,Thalictrum flavum type,267,1
+Punt,Tilia cordata type,217,1
+Punt,Tilia platyphyllos type,218,1
+Punt,Typha latifolia type,35,1
+Punt,Urtica dioica type,145,1
+Punt,Xanthium strumarium type,356,1
+Moore,Aster type,31,1
+Moore,Sinapis type,21,1
+Moore,Galium type,55,1
+Moore,Hornungia type,25,1
+Moore,Juniperus type,90,1
+Moore,Malva type,24,1
+Moore,Mentha type,5,1
+Moore,Stachys sylvatica type,149,1
+Moore,Sinapis type,21,1
+Andersen,Avena-Triticum group,3,1
+Andersen,Hordeum group,2,1
+Andersen,Poaceae wild grass group,1,1
+Florenzano,Cichorieae (undiff.),5,1
