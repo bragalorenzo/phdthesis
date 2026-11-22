@@ -2,79 +2,27 @@
 #--- PhD Thesis Data Analysis ---#--- Part 5: Temporal GAMs ---#
 ################################################################
 
-# Savestates #####
-save.image("inf1_roc_workspace.RData")
-load("cpz2_cta_workspace.RData")
-
 # Libraries #####
 
 library(tidyverse)
 library(vegan)
 library(mgcv)
+library(gratia)
 
-# Setup #####
-
-record <- "inf1"
-
-workdir <- paste0(
-    "G:/My Drive/Work/PhD Thesis/Data Analysis/",
-    toupper(record),
-    " Data"
-)
-
-input_file <- paste0(
-    record, "_compendium.xlsx"
-)
-
-setwd(workdir)
-
-## Palette
-if (tolower(record) == "inf1") {
-    # INF1 palette
-    retro_palette <- c(
-        "MOD4b" = "#ce4a4a",
-        "MOD4a" = "#eaaf41",
-        "MOD3"  = "#3cb68e",
-        "MOD2"  = "#6688c3",
-        "MOD1b" = "#b25da6",
-        "MOD1a" = "#48a56a"
-    )
-    # Chronological order of pollen zones: recent -> old
-    zone_levels <- c("MOD4b", "MOD4a", "MOD3", "MOD2", "MOD1b", "MOD1a")
-} else if (tolower(record) == "cpz2") {
-    # CPZ2 palette
-    retro_palette <- c(
-        "MAL4" = "#ce4a4a",
-        "MAL3" = "#eaaf41",
-        "MAL2" = "#6688c3",
-        "MAL1b" = "#b25da6",
-        "MAL1a" = "#48a56a"
-    )
-    # Chronological order of pollen zones: recent -> old
-    zone_levels <- c(
-        "MAL4",
-        "MAL3",
-        "MAL2",
-        "MAL1b",
-        "MAL1a"
-    )
-} else {
-    message("Record not found.")
-}
-
-# Data #####
-
-counts_harmonised <- rio::import(input_file, sheet = "counts_harmonised")
-
-metadata <- rio::import(input_file, sheet = "sample_metadata")
-
-zones <- rio::import(input_file, sheet = "zonation")
-
-taxon_lookup <- rio::import(input_file, sheet = "taxon_lookup")
-
-# GAM data preparation #####
+# Setup and Data #####
 
 set.seed(777)
+
+record <- "inf1" # Manually change to swap records
+
+load(
+    paste0(
+        "./phdthesis/data/", # Path
+        record, "_harmonised_data.Rdata" # File name
+    )
+)
+
+# GAM data preparation #####
 
 # Filter and order metadata
 metadata_gam <- metadata |>
@@ -88,13 +36,6 @@ gam_counts <- counts_harmonised |>
     select(-"Indeterminable") |> # Remove indeterminable
     mutate(sample = as.character(sample)) |>
     tibble::column_to_rownames("sample")
-
-stopifnot(
-    !anyDuplicated(sample_ids),
-    !anyDuplicated(rownames(gam_counts)),
-    !anyNA(metadata_gam$ageCalBP),
-    all(sample_ids %in% rownames(gam_counts))
-)
 
 pollen_counts <- as.matrix(
     gam_counts[sample_ids, , drop = FALSE]
@@ -319,8 +260,6 @@ p_gam
 
 # GAM first derivatives #####
 
-set.seed(777)
-
 gam_derivatives <- purrr::map_dfr(selected_taxa, function(tx) {
     d <- gratia::derivatives(
         gam_fits[[tx]],
@@ -437,8 +376,6 @@ print(change_intervals, n = Inf)
 
 # GAM diagnostics #####
 
-set.seed(777)
-
 k_diagnostics <- purrr::map_dfr(selected_taxa, function(tx) {
     kc <- as.data.frame(mgcv::k.check(gam_fits[[tx]]))
 
@@ -455,12 +392,10 @@ print(k_diagnostics, n = Inf)
 
 # Diagnostic plots #####
 
+## Saved to external pdf file
+
 pdf(
-    file = paste0(
-        "./Figures/",
-        record, "_GAM_diagnostics_",
-        Sys.Date(), ".pdf"
-    ),
+    file = "lb_thesis_gam_diagnostics.pdf",
     width = 10,
     height = 8,
     onefile = TRUE
@@ -478,74 +413,6 @@ for (tx in selected_taxa) {
         line = 1,
         font = 2,
         cex = 1.2
-    )
-}
-
-dev.off()
-
-# Export GAM tables #####
-
-rio::export(
-    list(
-        "summary" = gam_summary,
-        "screening" = gam_results,
-        "frequency" = taxon_frequency,
-        "significant_taxa" = significant_taxa_frequency,
-        "predictions" = gam_predictions,
-        "derivatives" = gam_derivatives,
-        "change_intervals" = change_intervals,
-        "k_diagnostics" = k_diagnostics
-    ),
-    file = paste0(
-        "./outputs/",
-        record, "_GAM_",
-        Sys.Date(),
-        ".xlsx"
-    )
-)
-
-# Export GAM figures #####
-
-plot_height <- 2.8 * ceiling(
-    length(selected_taxa) / plot_ncol
-) + 1
-
-gam_figures <- list(
-    "curves" = p_gam,
-    "derivatives" = p_derivatives,
-    "curves_derivatives" = p_gam / p_derivatives
-)
-
-figure_heights <- c(
-    curves = plot_height,
-    derivatives = plot_height,
-    curves_derivatives = 2 * plot_height
-)
-
-for (fig in names(gam_figures)) {
-    svg(
-        filename = paste0(
-            "./Figures/",
-            record, "_GAM_", fig, "_",
-            Sys.Date(), ".svg"
-        ),
-        width = 12,
-        height = figure_heights[[fig]]
-    )
-
-    print(gam_figures[[fig]])
-    dev.off()
-
-    ggsave(
-        filename = paste0(
-            "./Figures/",
-            record, "_GAM_", fig, "_",
-            Sys.Date(), ".png"
-        ),
-        plot = gam_figures[[fig]],
-        width = 12,
-        height = figure_heights[[fig]],
-        dpi = 300
     )
 }
 
@@ -583,26 +450,6 @@ for (tx in selected_taxa) {
 }
 
 dev.off()
-
-# Save GAM workspace #####
-
-saveRDS(
-    list(
-        record = record,
-        models = gam_fits,
-        screening = gam_results,
-        frequency = taxon_frequency,
-        predictions = gam_predictions,
-        derivatives = gam_derivatives,
-        change_intervals = change_intervals,
-        k_diagnostics = k_diagnostics
-    ),
-    file = paste0(
-        "./outputs/",
-        record, "_GAM_analysis_",
-        Sys.Date(), ".rds"
-    )
-)
 
 # Avena-Triticum residuals check: oscillatory trend? #####
 
@@ -656,25 +503,3 @@ svg(
 )
 p_residuals
 dev.off()
-
-ggsave(
-    filename = paste0(
-        "./Figures/",
-        record, "_avena-triticum_residuals_",
-        Sys.Date(), ".png"
-    ),
-    plot = p_residuals,
-    width = 16,
-    height = 9,
-    dpi = 300
-)
-
-rio::export(
-    gam_residuals,
-    file = paste0(
-        "./outputs/",
-        record, "_avena-triticum_residuals_",
-        Sys.Date(),
-        ".xlsx"
-    )
-)
